@@ -1,0 +1,391 @@
+/* ═══════════════════════════════════════════════════════════
+   MHF4U COURSE DATA — this is the only file you edit.
+
+   Each day looks like:
+     {d:1, iso:"2026-09-01", topic:"Review of Functions", num:"1.1",
+      note:"", ans:"", extras:[]}
+
+   - note: paste the URL of the blank note & practice problems.
+           Empty "" shows a greyed-out link with "Coming soon".
+   - ans:  paste the URL of the answers. Empty "" is greyed out
+           (and only shown once the day has arrived).
+   - num:  the note number shown to students ("1.7 Blank Note &
+           Practice Problems"). Days with no note (tests, work
+           periods) just leave num out.
+   - flag: "quiz" | "review" | "test" tints the row. Quiz days
+           use noteLabel/ansLabel for custom link names.
+   - extras: [ ["Title","https://…","kind"], … ]
+           kind = "doc" (worksheet/handout), "ans" (solutions,
+           shows the ☠︎ warning), "vid" (video).
+
+   D(id) is shorthand for a Google Drive link — paste either a
+   full URL or D("fileId"), both work.
+   ═══════════════════════════════════════════════════════════ */
+
+const D = id => `https://drive.google.com/file/d/${id}/view`;
+
+const COURSE = {
+  code: "MHF4U",
+  title: "Advanced Functions",
+  sub: "Grade 12 · University Preparation · 2026–27",
+  units: [
+
+  /* ── UNIT 1 ─────────────────────────────────────────────── */
+  {name:"Functions", days:[
+    {d:1, iso:"2026-09-01", topic:"Review of Functions", num:"1.1", note:"", ans:"", extras:[
+      ["Course Outline","https://docs.google.com/document/d/1TKs_nssQF9nXddPcy7fTJ68k6P8HA77nYvO-fjZeLsQ/edit","doc"],
+      ["Ms. Havrot’s Video Lessons","https://www.youtube.com/watch?v=syJBv0xM8B8","vid"],
+      ["LG/SC Review from 3U",D("1B4y9b2TMDEZYqG_tXoG2RCuPREQPI9ef"),"doc"],
+    ]},
+    {d:2, iso:"2026-09-02", topic:"Math Overview & Inverses", num:"1.2", note:"", ans:"", extras:[
+      ["Common Math Symbols",D("14gKLpT3TMJgeAkocJ7890DwQfmMMZb0h"),"doc"],
+      ["Math Review / Overview",D("1Yem58YTDsBHEvbqA1RHn0XVhFuMxhxU5"),"doc"],
+      ["Answers",D("1-Y8SYfMiWKaX3J9d19JCi2G68VRsv6sd"),"ans"],
+      ["Parent Functions Reference Sheet",D("1hXmcBsb5AuOBgLMx3_UVnOxelnfK8Nlk"),"doc"],
+      ["Old Properties Note",D("1YnFu4xlmnY6ZzNfPNryArULRnzzO_U2J"),"doc"],
+      ["Answers",D("1ZOBNAAqQZmaaQPKGXZuiEGZoqn825p7s"),"ans"],
+    ]},
+    {d:3, iso:"2026-09-03", topic:"Mathematical Patterns", num:"1.3", note:"", ans:"", extras:[
+      ["Domain & Range Worksheet",D("12D6Wf_aWjvp3TMwibvPRFKc4oUhs6nWw"),"doc"],
+      ["Interval Notation","https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:introduction-to-the-domain-and-range-of-a-function/v/introduction-to-interval-notation","vid"],
+      ["Domain & Range of Graphs","https://www.youtube.com/watch?v=YjVc9ookvRs","vid"],
+    ]},
+    {d:4, iso:"2026-09-04", topic:"Absolute Value", num:"1.4", note:"", ans:"", extras:[]},
+    {d:5, iso:"2026-09-08", topic:"Radians", num:"1.5", note:"", ans:"", extras:[
+      ["I/O Diagrams & Function Notation",D("13cWi_5WSXjQWA0TnT_i9qMA40U5nXhgC"),"doc"],
+      ["Answers",D("13e34ICvMaArFfvaRYvzmr_DXwjkFHG6P"),"ans"],
+      ["I/O Diagrams with Quadratics",D("13_rwK9BRjyIrzV8DOCfrbeD0dA5Oohx1"),"doc"],
+      ["Answers",D("13he6tfK3CSu4LGMYGmOCR2xfykVBTdRO"),"ans"],
+      ["Extra Transformation Question",D("1HzeS8WFhg0o82kkWWNNYpDUzlRLQKYoQ"),"doc"],
+      ["Extra Transformation Practice (with order)","https://docs.google.com/document/d/1IUDImHOCrs2K8wxj4wLvBMWCC6JC-hVvTHJC-alk5Tw/edit","doc"],
+    ]},
+    {d:6, iso:"2026-09-09", topic:"Trig: Inverse vs Reciprocal", num:"1.6", note:"", ans:"", extras:[
+      ["Absolute Value Inequalities","https://www.youtube.com/watch?v=iI_2Piwn_og","vid"],
+      ["Old Transformations Note",D("1ZpwnmA9L5EtmBjmAJXtGaUnSIZ5p5bo7"),"doc"],
+      ["Answers",D("1Qo82oyxLpLBx22lWTQP23oanJWk2YA--"),"ans"],
+      ["Answers (with I/O)",D("1Jjop5z_MzxaVEGSWv522zKxDaZrAdPcS"),"ans"],
+    ]},
+    {d:7, iso:"2026-09-10", topic:"Transformations", num:"1.7", note:"", ans:"", extras:[
+      ["Properties of Functions Review",D("11ljLhzas7erncDuHmSnDFaCkPd6FQw6q"),"doc"],
+      ["Answers",D("11sqQDo5wI-GfV2fxV18NWRLcMQZTW5hq"),"ans"],
+      ["Properties Challenge",D("1RKGC6FyeFK36B8_r4CT47w4SNhG6JvK9"),"doc"],
+      ["Answers",D("1SE1I-3qiHlAk0LjJP0Bf2i61zgCSxr04"),"ans"],
+    ]},
+    {d:8, iso:"2026-09-11", topic:"Properties of Functions", num:"1.8", note:"", ans:"", extras:[
+      ["Function Notation Extra Practice","https://docs.google.com/document/d/1n1wRsbtm4vZTYPBxOE6kh2rNKuBrAaVzsSf-B-oz2oo/edit","doc"],
+    ]},
+    {d:9, iso:"2026-09-14", topic:"Piecewise Functions", num:"1.9", note:"", ans:"", extras:[
+      ["Old Inverse Relations Note",D("1_6elt4Hz9JXp6hep4YTfQ7hZWofk2tS0"),"doc"],
+      ["Answers",D("1SCks1LLe3LsAFQzm7S-g8MhlLET3Fids"),"ans"],
+    ]},
+    {d:10, iso:"2026-09-15", topic:"Practice Quiz · Work Period", flag:"quiz",
+      noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[
+      ["Function Notation Example","https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/8th-functions-and-function-notation/v/understanding-function-notation-example-3","vid"],
+      ["Composite Functions Examples","https://www.youtube.com/watch?v=ZFPkQkURSxk","vid"],
+    ]},
+    {d:11, iso:"2026-09-16", topic:"Operations with Functions", num:"1.10", note:"", ans:"", extras:[]},
+    {d:12, iso:"2026-09-17", topic:"Composite Functions", num:"1.11", note:"", ans:"", extras:[]},
+    {d:13, iso:"2026-09-18", topic:"Modelling Investigation", note:"", ans:"", extras:[]},
+    {d:14, iso:"2026-09-21", topic:"Logarithmic Functions", num:"1.12", note:"", ans:"", extras:[]},
+    {d:15, iso:"2026-09-22", topic:"Solving the Unsolvable", num:"1.13", note:"", ans:"", extras:[]},
+    {d:16, iso:"2026-09-23", topic:"Review", flag:"review", note:"", ans:"", extras:[
+      ["Review Learning Goals & Success Criteria","https://docs.google.com/document/d/1PM-Pt9rS_Bh1LQl8MU7-IcBnvwCZgj3dwJXL6Ghl7E0/edit","doc"],
+      ["LG/SC with Possible Questions & Solutions",D("11ghnyya9SE1PYG3VXTOaKdcJt8iM1h5J"),"doc"],
+      ["Practice Test",D("1ziRAF3iiRMCg2OfhBgeKtEdyA2OMxuC9"),"doc"],
+      ["Answers",D("15OHqE5y9iex0s_O_5GhvdGafJtOS3tr9"),"ans"],
+      ["Additional Review Questions",D("11r0VoVa4u5byf5-BcRGO_-Q_6owAWCSK"),"doc"],
+    ]},
+    {d:17, iso:"2026-09-24", topic:"Unit Test", flag:"test", extras:[]},
+  ]},
+
+  /* ── UNIT 2 ─────────────────────────────────────────────── */
+  {name:"Polynomial Functions", days:[
+    {d:1, iso:"2026-09-25", topic:"Exploring Polynomial Functions", num:"2.1", note:"", ans:"", extras:[
+      ["Factoring Note with Examples",D("172JVWB48hnwCbyJOf_6hQOqP-nvId9nz"),"doc"],
+      ["Factoring Worksheet",D("16wBxYMkSBnxSJ7isUZbQuxvfOxisBUyy"),"doc"],
+      ["Factoring: Greatest Common Factor (Khan)","https://www.khanacademy.org/gclassroom/math/algebra2/x2ec2f6f830c9fb89:poly-factor/x2ec2f6f830c9fb89:common-factor/a/taking-common-factors","vid"],
+      ["Factoring — How-to Video","https://www.youtube.com/watch?v=kAHRBxLhkW8","vid"],
+      ["Degree from TOV Practice","https://docs.google.com/document/d/172LPMGDL19hE7Vj0UnR8dyT4zD9oe4Qz/edit","doc"],
+      ["Answers",D("174_8ZkyIjmRwAvdoZTs0uLzuL_YlPsIT"),"ans"],
+    ]},
+    {d:2, iso:"2026-09-28", topic:"Polynomial Properties Investigation", num:"2.2", note:"", ans:"", extras:[
+      ["Polynomial Practice",D("1Udu9Rbnu95tzH7AljcW4lIHWFF16GYcc"),"doc"],
+      ["Answers",D("1Ue3x4bzz7LtC5vWPuxFCLHym5GTDBe-H"),"ans"],
+    ]},
+    {d:3, iso:"2026-09-29", topic:"Factored Polynomials", num:"2.3", note:"", ans:"", extras:[
+      ["Factored Form Video Lesson","https://www.youtube.com/watch?v=5zvcIREUjW4","vid"],
+    ]},
+    {d:4, iso:"2026-09-30", topic:"Transformations of Polynomial Functions", num:"2.4", note:"", ans:"", extras:[
+      ["Transformations Video Lesson","https://www.youtube.com/watch?v=GUzxZUzqJJ8","vid"],
+    ]},
+    {d:5, iso:"2026-10-01", topic:"Practice Quiz", flag:"quiz",
+      noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[
+      ["Fundamental Theorem of Algebra","https://www.youtube.com/watch?v=shEk8sz1oOw","vid"],
+    ]},
+    {d:6, iso:"2026-10-05", topic:"Dividing Polynomials", num:"2.5", note:"", ans:"", extras:[
+      ["Khan: Polynomial Division","https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-div/x2ec2f6f830c9fb89:quad-div-by-linear/v/polynomial-division","vid"],
+      ["Lesson: Dividing Polynomials","https://www.youtube.com/watch?v=3Kb0K6h3Dds","vid"],
+      ["Lesson: Synthetic Division","https://www.youtube.com/watch?v=HxFROWAW1Rs","vid"],
+      ["Dividing Polynomials Worksheet",D("1AQMKPh9Qmi2hTemVczPjsnTZkNs3EDCR"),"doc"],
+    ]},
+    {d:7, iso:"2026-10-06", topic:"Dividing, Continued", note:"", ans:"", extras:[
+      ["Extra Practice Problems",D("1XEZWZxJuqZwB4pGuMORzX2HZp8bPU_vB"),"doc"],
+      ["Answers",D("1XTbGLHrnSzJgyjTOOmZ9rc3-fkHtR7kC"),"ans"],
+    ]},
+    {d:8, iso:"2026-10-07", topic:"Factoring Polynomials", num:"2.6", note:"", ans:"", extras:[
+      ["Factoring by Grouping","https://www.youtube.com/watch?v=t7-JCa7phCQ","vid"],
+    ]},
+    {d:9, iso:"2026-10-08", topic:"Factoring Sum or Difference of Cubes", num:"2.7", note:"", ans:"", extras:[
+      ["Sum or Difference of Cubes Worksheet",D("1Bqfy8GGOs4L2pddLKlm75nZBjWh6u7xw"),"doc"],
+      ["Exponent Worksheet",D("18OkSTlX0wHwBtbrPsPz8bW6ABk8ZgI-q"),"doc"],
+      ["Simplifying Rational Exponents",D("182zS4hOiXNe8B6RxQf09IoOOmXEmqjiG"),"doc"],
+      ["Answers",D("180cwK_JBCWNLol-6HXiQTAg7ReKHI53P"),"ans"],
+    ]},
+    {d:10, iso:"2026-10-09", topic:"Review", flag:"review", note:"", ans:"", extras:[
+      ["Sketching Worksheet",D("1sSdTYJEhghFtaq0PIe4S5XSCcEaWsIXf"),"doc"],
+      ["Answers",D("1WpZNJWm2l6kGe3Vs-ueBXUkDSgJEnleE"),"ans"],
+      ["Dividing Practice",D("1P4UuSqsstKTel3IzAxjE-9C3mHshFncw"),"doc"],
+    ]},
+    {d:11, iso:"2026-10-13", topic:"Unit Test", flag:"test", extras:[]},
+  ]},
+
+  /* ── UNIT 3 ─────────────────────────────────────────────── */
+  {name:"Polynomial Equations & Inequalities", days:[
+    {d:1, iso:"2026-10-14", topic:"Solving Polynomial Equations", num:"3.1", note:"", ans:"", extras:[
+      ["Jensen: Solving Polynomial Equations","https://www.youtube.com/watch?v=3DXn0v55KSY","vid"],
+      ["Practice Solving Polynomials","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ec0c6ea7b6b91ae7b8dfa0/1642859631045/2.3+hws+solve+polynomial+equations.pdf","doc"],
+      ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ec0c748922b857abf38641/1642859636816/2.3+hwt+solve+polynomial+equations.pdf","ans"],
+      ["Operations with Radicals Worksheet",D("1I9Qe1vW9ThikSeaZGkZXNMGBv0DEL_Xz"),"doc"],
+    ]},
+    {d:2, iso:"2026-10-15", topic:"Solving Linear Inequalities", num:"3.2", note:"", ans:"", extras:[
+      ["Linear Equations","https://www.youtube.com/watch?v=Ft2_QtXAnh8","vid"],
+      ["Solving Linear Equations","https://www.youtube.com/watch?v=7DPWeBszNSM","vid"],
+    ]},
+    {d:3, iso:"2026-10-16", topic:"Solving Polynomial Inequalities", num:"3.3", note:"", ans:"", extras:[
+      ["Lesson: Polynomial Inequalities","https://www.youtube.com/watch?v=aTxdx6QKCfo","vid"],
+      ["Practice Solving Inequalities","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ec0d30644b3f2d27288491/1642859827148/2.5+hws+solving+inequalities.pdf","doc"],
+      ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ec0d389e7a884213b9b9b0/1642859833266/2.5+hwt+solving+inequalities.pdf","ans"],
+    ]},
+    {d:4, iso:"2026-10-19", topic:"Challenge Quiz", flag:"quiz",
+      noteLabel:"Challenge Quiz", ansLabel:"Answers", note:"", ans:"", extras:[
+      ["Factorable Polynomials Practice",D("1-YHrHcxBborXOI8-f7tzpKXQnjbOQSpl"),"doc"],
+    ]},
+    {d:5, iso:"2026-10-20", topic:"Average Rates of Change", num:"3.4", note:"", ans:"", extras:[
+      ["Jensen: Average Rate of Change","https://www.youtube.com/watch?v=7nQoJI_bNuk","vid"],
+      ["Jensen: Instantaneous ROC","https://www.youtube.com/watch?v=KLTq4Kyo7ZU","vid"],
+      ["Practice AROC","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed5f15caace83d20b3ab15/1642946326039/hw1s++1.5+average+rate+of+change.pdf","doc"],
+      ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed5f1aed236a1f9a395dc6/1642946331129/hw1t++1.5+average+rate+of+change.pdf","ans"],
+      ["Practice IROC","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed5f65557fe87e3711c1f6/1642946406385/hw2s++1.6+instantaneous+rate+of+change.pdf","doc"],
+      ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed5f6be05d8d4b38d4a1d6/1642946411452/hw2t++1.6+instantaneous+rate+of+change.pdf","ans"],
+    ]},
+    {d:6, iso:"2026-10-21", topic:"Instantaneous Rates of Change", num:"3.5", note:"", ans:"", extras:[
+      ["Forward Difference on Desmos","https://www.desmos.com/calculator/ckzy8wij4n","doc"],
+    ]},
+    {d:7, iso:"2026-10-22", topic:"Representing ROC & Graphing", num:"3.6", note:"", ans:"", extras:[
+      ["Polynomial Inequalities (with solutions)",D("1PFSZJANtptlcvfcpjYn88cPJsIsEoaA6"),"doc"],
+    ]},
+    {d:8, iso:"2026-10-23", topic:"Problems Involving ROC", num:"3.7", note:"", ans:"", extras:[
+      ["Solving Problems with ROC","https://www.youtube.com/watch?v=4SNAk2fSD58","vid"],
+    ]},
+    {d:9, iso:"2026-10-26", topic:"ROC in Polynomial Functions", num:"3.8", note:"", ans:"", extras:[
+      ["Extra Question",D("1aBXsRzX4CcE-guWcFp-sip7J8gAH4a_0"),"doc"],
+      ["Answers",D("1aC4TJKD2T56iRg7KR7Qjj3yTo4AtPLc8"),"ans"],
+    ]},
+    {d:10, iso:"2026-10-27", topic:"Review", flag:"review", note:"", ans:"", extras:[]},
+    {d:11, iso:"2026-10-28", topic:"Unit Test", flag:"test", extras:[]},
+  ]},
+
+  /* ── UNIT 4 ─────────────────────────────────────────────── */
+  {name:"Rational Functions", days:[
+    {d:1, iso:"2026-10-29", topic:"Graphs of Reciprocal Functions", num:"4.1", note:"", ans:"", extras:[
+      ["Ms. Havrot’s Videos: Rational Functions","https://www.youtube.com/watch?v=QT2hD5EnHAs&list=PLGinkJ_ZMO2FE8EzZwCSUIPxOmMxmrzVv","vid"],
+      ["Jensen: Reciprocal Functions","https://www.youtube.com/watch?v=CoqCJQMt8JU","vid"],
+      ["Practice Problems","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed62523ad0a2796cf8ce9a/1642947155249/hw1t+3.1+reciprocal+of+linear+and+quadratic.pdf","doc"],
+    ]},
+    {d:2, iso:"2026-10-30", topic:"Quotients of Polynomials", num:"4.2", note:"", ans:"", extras:[
+      ["Completing the Square","https://www.youtube.com/watch?v=JIoW2AnQyXQ","vid"],
+      ["Visual Explanation of Completing the Square","https://www.youtube.com/watch?v=McDdEw_Fb5E","vid"],
+      ["Fun Quotients Questions",D("1_jtA6W6U0wv2zYZAmW91WyTRv9wAMV4U"),"doc"],
+      ["Answers",D("1jKzPJVo_AvVXglVr5jLT3bLyUhtm8uJ8"),"ans"],
+    ]},
+    {d:3, iso:"2026-11-02", topic:"Graphs of Rational Functions", num:"4.3", note:"", ans:"", extras:[
+      ["Practice Problems (Linear)","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed62a13e485b16c508d2bb/1642947233229/hw2s++3.3+quotient+of+linear+functions.pdf","doc"],
+      ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed62a70a718a6aa7c0bdaf/1642947240026/hw2t++3.3+quotient+of+linear+functions.pdf","ans"],
+    ]},
+    {d:4, iso:"2026-11-03", topic:"Solving Rational Equations", num:"4.4", note:"", ans:"", extras:[
+      ["Jensen: Solving Rational Equations","https://www.youtube.com/watch?v=i2WksNaT4wQ","vid"],
+      ["Rational Equations with Word Problems",D("1dK64Bgy3Ihi8pkdWfSd_9GPsB_JGb7bR"),"doc"],
+      ["Answers",D("1dCjIgI2sgSf_AerOVxZiRDdgo5JBbCnP"),"ans"],
+      ["Solving Rational Equations Extra Practice",D("1be_IW9jyXjymPKMs8ysSCxmbIKdTdgsW"),"doc"],
+      ["Answers",D("1bijU5OfLsC9aKn-jomwvgCqXa_MGNMBS"),"ans"],
+    ]},
+    {d:5, iso:"2026-11-04", topic:"Practice Quiz", flag:"quiz",
+      noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[
+      ["Graphing Quotients Extra Practice",D("1ci6x8Ho84QyRjt2Md36oG0eMYbmTAtsy"),"doc"],
+      ["Answers",D("1cj4bBx3CRvnfRXAb9EFQ-LOPLjsmGjoJ"),"ans"],
+    ]},
+    {d:6, iso:"2026-11-05", topic:"Solving Rational Inequalities", num:"4.5", note:"", ans:"", extras:[
+      ["Jensen: Solving Rational Inequalities","https://www.youtube.com/watch?v=_U8lOBTvfNs","vid"],
+      ["Practice Solving Rational Inequalities",D("1befmdB8vadxFu9GD8gmcUqvcW9CLbQR_"),"doc"],
+      ["Answers",D("1bwJUEgfAJcjL_xL_KtGBEIAf5C9oEpEi"),"ans"],
+    ]},
+    {d:7, iso:"2026-11-06", topic:"ROC of Rational Functions", num:"4.6", note:"", ans:"", extras:[]},
+    {d:8, iso:"2026-11-09", topic:"Review", flag:"review", note:"", ans:"", extras:[
+      ["Challenge Questions",D("1es6G1-ukzAGTbwJ5Vv_nPvFkKEk7ltxc"),"doc"],
+      ["Answers",D("10PWXTJC3uXKDcmb_l4CIvDhr2aPQ-R8k"),"ans"],
+    ]},
+    {d:9, iso:"2026-11-10", topic:"Unit Test", flag:"test", extras:[]},
+  ]},
+
+  /* ── UNIT 5 ─────────────────────────────────────────────── */
+  {name:"Trigonometric Functions", days:[
+    {d:1, iso:"", topic:"Trig Review", num:"5.1", note:"", ans:"", extras:[
+      ["More Trigonometry Practice",D("1eDk4okSLmzeoMjnnK6yN0d1Ox9MnDhtX"),"doc"],
+      ["Answers",D("1OEWpsnL7f8NhkCcKfb6NI6Z5HZglpEJN"),"ans"],
+    ]},
+    {d:2, iso:"", topic:"Radians", num:"5.2", note:"", ans:"", extras:[
+      ["Exact Special Triangles Practice",D("1Pwyg2hp217LGKfr8QH9AUmU2CtakHOqR"),"doc"],
+      ["Answers",D("1QAta6TpNRw6CE_VCZWTIcZ0m2z8Vb0hA"),"ans"],
+      ["Radians Worksheet","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed50f5f0818b1a92890325/1642942709577/hw1s++4.1+Radian+Measure.pdf","doc"],
+      ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed50fa557fe87e37110761/1642942714576/hw1t++4.1+Radian+Measure.pdf","ans"],
+      ["In-Class Note: Speed vs Angular Speed",D("1JH_B_ekPRnYrK9rNLOapbvjcFWkerC3T"),"doc"],
+    ]},
+    {d:3, iso:"2026-11-11", topic:"Trig Ratios with Radians", num:"5.3", note:"", ans:"", extras:[
+      ["SOH CAH TOA Song","https://www.youtube.com/watch?v=PIWJo5uK3Fo","vid"],
+    ]},
+    {d:4, iso:"2026-11-12", topic:"Graphs of Trig Functions", num:"5.4", note:"", ans:"", extras:[
+      ["Trig Angles Simulation","https://phet.colorado.edu/sims/html/trig-tour/latest/trig-tour_en.html","doc"],
+      ["Transformations Review",D("1R_qADObrxDzdGpxFfIlRo2uUdJdsdo9z"),"doc"],
+      ["Answers",D("1RUav7ZtepkNj-XT8Z3Q1G_Qf1_wkyxBv"),"ans"],
+    ]},
+    {d:5, iso:"2026-11-13", topic:"Practice Quiz", flag:"quiz",
+      noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[]},
+    {d:6, iso:"2026-11-16", topic:"Transformations of Trig Functions", num:"5.5", note:"", ans:"", extras:[
+      ["Graphing Extra Practice (with answers)",D("1R8ytvzOWMppeLJhsje4RBBroGERjIdL5"),"doc"],
+    ]},
+    {d:7, iso:"2026-11-17", topic:"Reciprocal Trig Functions", num:"5.6", note:"", ans:"", extras:[
+      ["Graphing All Trig Functions Worksheet","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed517c0e1ca17f50545404/1642942844717/hw3s++Graphing+Trig+Functions.pdf","doc"],
+      ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed5182684ee5656cdedfea/1642942850446/hw3t++Graphing+Trig+Functions.pdf","ans"],
+    ]},
+    {d:8, iso:"2026-11-18", topic:"Modelling with Trig Functions", num:"5.7", note:"", ans:"", extras:[
+      ["Trig Applications Worksheet","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed520c2d3b9c7554d007c3/1642942988894/hw5s++Trig+Applications.pdf","doc"],
+      ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed52117618b227cf316b53/1642942994194/hw5t++Trig+Applications.pdf","ans"],
+    ]},
+    {d:9, iso:"2026-11-19", topic:"Review", flag:"review", note:"", ans:"", extras:[
+      ["Extra Review Questions","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed524a1f188b0ab84d4079/1642943050935/Unit+4+Review++Trig+in+Radians.pdf","doc"],
+      ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed525acc0eeb42ab7837de/1642943066952/Unit+4+Review++Trig+in+Radians+SOLUTIONS.pdf","ans"],
+    ]},
+    {d:10, iso:"2026-11-20", topic:"Trig Rates of Change", num:"5.8", note:"", ans:"", extras:[]},
+    {d:11, iso:"2026-11-24", topic:"Trig Functions Test (without calculators)", flag:"test", extras:[]},
+    {d:12, iso:"2026-11-25", topic:"Trig Functions Test (with calculators)", flag:"test", extras:[]},
+  ]},
+
+  /* ── UNIT 6 ─────────────────────────────────────────────── */
+  {name:"Trig Identities & Equations", days:[
+    {d:1, iso:"2026-11-26", topic:"Trig & Equivalent Functions Review", num:"6.1", note:"", ans:"", extras:[
+      ["Review: Trig Identities",D("1YI0Zr7DZkqQc6hdEzJChXoMJbCP0Mo1w"),"doc"],
+      ["Answers",D("1-bzNcIKgWX7rfzqmbfDr2CpYS7zi0NNr"),"ans"],
+      ["Solving Trig Identities","https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:trig/x9e81a4f98389efdf:using-trig-id/v/examples-using-pythagorean-identities-to-simplify-trigonometric-expressions","vid"],
+      ["Verifying a Trig Identity","https://www.youtube.com/watch?v=AzP3-KLqy8k","vid"],
+      ["Trigonometry Review","https://www.youtube.com/watch?v=mhd9FXYdf4s","vid"],
+      ["Trig Fundamentals","https://www.youtube.com/watch?v=yBw67Fb31Cs","vid"],
+    ]},
+    {d:2, iso:"2026-11-27", topic:"Equivalent Trig Functions", num:"6.2", note:"", ans:"", extras:[
+      ["Lesson Video","https://youtu.be/TyZBzrScTy0","vid"],
+    ]},
+    {d:3, iso:"2026-11-30", topic:"Compound Angle Formulas", num:"6.3", note:"", ans:"", extras:[
+      ["Trig Formula Sheet (given on test)","https://docs.google.com/document/d/1gyyytcT3ASFSil86hQ84eD7yX9DD2_iU4d2CCzgui9I/edit","doc"],
+      ["Proving Compound Angle Formulas","https://www.youtube.com/watch?v=zpyPTBgUqkQ","vid"],
+      ["Using Compound Angles to Solve Problems","https://www.youtube.com/watch?v=sU2pyMR8GZ4","vid"],
+    ]},
+    {d:4, iso:"2026-12-01", topic:"Double Angle Formula", num:"6.4", note:"", ans:"", extras:[
+      ["Double Angle Identities & Examples","https://www.youtube.com/watch?v=SE5SBTgrwH8","vid"],
+    ]},
+    {d:5, iso:"2026-12-02", topic:"Practice Quiz", flag:"quiz",
+      noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[
+      ["Trig Identities Check-in Answers",D("18_76pPLZVhYuaka0JyO-pr3pnX7PZovZ"),"ans"],
+    ]},
+    {d:6, iso:"2026-12-03", topic:"Proving Trig Identities", num:"6.5", note:"", ans:"", extras:[
+      ["Proving Trig Identities","https://www.youtube.com/watch?v=iG5KxwvOINQ","vid"],
+      ["Proving More Trig Identities","https://www.youtube.com/watch?v=rqOynMOkAXQ","vid"],
+    ]},
+    {d:7, iso:"2026-12-04", topic:"Proving Trig Identities II", num:"6.6", note:"", ans:"", extras:[
+      ["Extra Trig Identities",D("1XGtsmcXo3n9EVhrQxQgqYJLtGStxaCMv"),"doc"],
+      ["Answers",D("1aXSMy1NrcpMiX3HuSC0NwWUAfkYrblxT"),"ans"],
+      ["Level 5 Trig Identities",D("1ehIH3B6lwez7d03K2_XIc-IjOSHkgIs9"),"doc"],
+      ["Answers",D("1fJ_IjgjEK8NXMVhjlg2WMfGleUcJ3WNM"),"ans"],
+    ]},
+    {d:8, iso:"2026-12-07", topic:"Solving Linear Trig Equations", num:"6.7", note:"", ans:"", extras:[
+      ["Solving Linear Trig Equations","https://www.youtube.com/watch?v=Z2z5zm-sCFE","vid"],
+    ]},
+    {d:9, iso:"2026-12-08", topic:"Solving Quadratic Trig Equations", num:"6.8", note:"", ans:"", extras:[
+      ["Solving Quadratic Trig Equations","https://www.youtube.com/watch?v=NqxLu7E00uE","vid"],
+    ]},
+    {d:10, iso:"2026-12-09", topic:"Review", flag:"review", note:"", ans:"", extras:[
+      ["Practice Tests (Hudgin)",D("1VLV6ITAq9IWBPbJSdsq7pi8pbk2b9plT"),"doc"],
+      ["Answers",D("16nDXz6px2P8KvPCcWEcVTxbvwvFQUHu0"),"ans"],
+    ]},
+    {d:11, iso:"2026-12-10", topic:"Review II", flag:"review", note:"", ans:"", extras:[]},
+    {d:12, iso:"2026-12-11", topic:"Unit Test", flag:"test", extras:[]},
+  ]},
+
+  /* ── UNIT 7 ─────────────────────────────────────────────── */
+  {name:"Exponentials & Logarithms", days:[
+    {d:1, iso:"2026-12-14", topic:"Logarithmic Functions", num:"7.1", note:"", ans:"", extras:[
+      ["Short-cut to Solve ANY Problem","https://www.youtube.com/watch?v=dQw4w9WgXcQ","vid"],
+      ["Ms. Havrot’s Videos: Exponentials & Logs","https://www.youtube.com/watch?v=w-2ku9QNYlA&list=PLGinkJ_ZMO2HQwGf8mAmHGPQTJr1_faeF","vid"],
+    ]},
+    {d:2, iso:"2026-12-15", topic:"Transformations of Log Functions", num:"7.2", note:"", ans:"", extras:[]},
+    {d:3, iso:"2026-12-16", topic:"Exploring Graphs of Log Functions", num:"7.3", note:"", ans:"", extras:[
+      ["Distance vs Loudness Data","https://docs.google.com/spreadsheets/d/1OgkZH9FMYJVyvrgC8vwtPE4-Mu4557iTJfTDcoIydb4/edit","doc"],
+      ["Santa’s Chaotic Workshop Challenge",D("1jIIr6PjZ_w66MxFeNeXYxWYJC2coJdIc"),"doc"],
+    ]},
+    {d:4, iso:"2026-12-17", topic:"Evaluating Logs", num:"7.4", note:"", ans:"", extras:[]},
+    {d:5, iso:"2026-12-18", topic:"Work Period", note:"", ans:"", extras:[
+      ["Old Note: Log Rates of Change",D("1gnuqeN1WbbUjxIX9tLh_tb5tg3sXRIws"),"doc"],
+      ["Answers",D("1h7v7Zj_wGTyAIri-PhlrY2ZEmlv88zrA"),"ans"],
+    ]},
+    {d:6, iso:"2027-01-04", topic:"Quiz", flag:"quiz",
+      noteLabel:"Practice Quiz", ansLabel:"Answers",
+      note:D("1me7CDpronCGi2rnlo8wh3ijM0VjYx4bP"), ans:D("1mjcaS7vcFV4Uk1fcIiTWJyMlchjOP_wm"), extras:[]},
+    {d:7, iso:"2027-01-05", topic:"Laws of Logs", num:"7.5", note:"", ans:"", extras:[
+      ["Logarithm Fundamentals","https://www.youtube.com/watch?v=cEvgcoyZvB4","vid"],
+    ]},
+    {d:8, iso:"2027-01-06", topic:"Solving Exponential Equations", num:"7.6", note:"", ans:"", extras:[]},
+    {d:9, iso:"2027-01-07", topic:"In-Class Activity", extras:[]},
+    {d:10, iso:"2027-01-08", topic:"In-Class Activity", extras:[]},
+    {d:11, iso:"2027-01-11", topic:"Solving Logarithmic Equations", num:"7.7", note:"", ans:"", extras:[]},
+    {d:12, iso:"2027-01-12", topic:"Solving Problems with Log & Exp Functions", num:"7.8", note:"", ans:"", extras:[
+      ["Extra Word Problems",D("1gYzFpvAb-EpoETfuOBKKMdGAGuzYaWt9"),"doc"],
+    ]},
+    {d:13, iso:"2027-01-13", topic:"Combining, Changing & Modelling with Log/Exp", num:"7.9", note:"", ans:"", extras:[
+      ["Desmos Gas Model (from class)","https://www.desmos.com/calculator/q7zzmwdqy1","doc"],
+    ]},
+    {d:14, iso:"2027-01-14", topic:"Review", flag:"review", note:"", ans:"", extras:[
+      ["Practice Test",D("1iY7Fv4H4pvzIvH_DLZLPvPTvbUUQ1s9T"),"doc"],
+      ["Answers",D("1iYTNlBzH-RTyQhQvvJOgV8ifTnTqBbJD"),"ans"],
+    ]},
+    {d:15, iso:"2027-01-15", topic:"Unit Test", flag:"test", extras:[]},
+  ]},
+
+  /* ── EXAM REVIEW (no unit number) ───────────────────────── */
+  {name:"Exam Review", noNumber:true, days:[
+    {d:1, iso:"2027-01-18", topic:"Cumulative Review", note:"", ans:"", extras:[
+      ["Exam Review",D("1m-RX1xdcaSuMp1bSJqrGqNvlZMiSzp1N"),"doc"],
+      ["Answers",D("1m5U4kMUP8Uhzw2j55FfoPa4WSImO1JjO"),"ans"],
+    ]},
+    {d:2, iso:"2027-01-19", topic:"Exam Review", note:"", ans:"", extras:[
+      ["Practice Test",D("1OnVgCckFxoISEBjxHrOhhOS_r96E2AzH"),"doc"],
+      ["Answers",D("140pzzW2_QfeWExTQpXM3tPP9jIzaPV94"),"ans"],
+    ]},
+    {d:3, iso:"2027-01-20", topic:"Exam Review", note:"", ans:"", extras:[
+      ["Practice Exam",D("1mIASdnvrZmnTukk7fkT0gY9qqpECVupa"),"doc"],
+      ["Answers",D("1m7jOpO_t5Xtb4W1VJb-6mFB9CA4y0vGt"),"ans"],
+    ]},
+    {d:4, iso:"2027-01-21", topic:"Exam Review", note:"", ans:"", extras:[
+      ["Exam Formula Sheet",D("1mwsClOqwXVcosKmqVRLTtenujljkhGND"),"doc"],
+      ["Another Practice Exam",D("1m8wGqdzNpg_QN1qZ4PPi4zDCN24aDDh0"),"doc"],
+      ["Answers",D("1m7RZHuk-ko30uuJKkk4jxRsuQpQ7I24_"),"ans"],
+    ]},
+  ]},
+]};
