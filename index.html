@@ -49,15 +49,20 @@ a{color:inherit;text-decoration:none}
 #bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
 .page{max-width:1080px;margin:0 auto;padding:2.5rem 1.5rem 4rem;position:relative;z-index:1}
 
-/* Today hero */
+/* Today hero — click it to jump to that day in the table */
 .hero{background:linear-gradient(135deg,var(--accent-dim),transparent 60%),var(--surface);
-  border:1px solid var(--accent-bdr);border-radius:var(--r);padding:1.35rem 1.5rem;margin-bottom:1.4rem;
-  position:relative;overflow:hidden;box-shadow:var(--sh2)}
-.hero::after{content:"ƒ";position:absolute;right:1.1rem;bottom:-1.6rem;font-size:7rem;font-weight:700;font-style:italic;
-  color:var(--accent);opacity:.07;font-family:Georgia,serif;pointer-events:none}
+  border:1px solid var(--accent-bdr);border-radius:var(--r);padding:.9rem 1.35rem;margin-bottom:1.4rem;
+  position:relative;overflow:hidden;box-shadow:var(--sh2);cursor:pointer;
+  transition:transform .2s ease,box-shadow .2s ease}
+.hero:hover{transform:scale(1.013);box-shadow:0 0 0 3px var(--accent-dim),var(--sh2)}
+.hero:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.hero::after{content:"ƒ";position:absolute;right:1rem;bottom:-1.3rem;font-size:5.5rem;font-weight:700;font-style:italic;
+  color:var(--accent);opacity:.07;font-family:Georgia,serif;pointer-events:none;transition:opacity .2s}
+.hero:hover::after{opacity:.13}
 .hero .eyebrow{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;display:flex;align-items:center;gap:.5rem}
 .hero .eyebrow .live{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--accent-dim)}
-.hero h2{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin:.3rem 0 .75rem;text-wrap:balance}
+.hero h2{font-size:1.45rem;font-weight:700;letter-spacing:-.02em;margin:.25rem 0 .6rem;text-wrap:balance;transition:color .2s,letter-spacing .2s}
+.hero:hover h2{color:var(--accent);letter-spacing:0}
 .hero .acts{display:flex;flex-wrap:wrap;gap:.5rem}
 .btn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;padding:.45rem .95rem;border-radius:8px;
   border:1px solid transparent;cursor:pointer;transition:transform .15s,opacity .15s;font-family:var(--sans)}
@@ -162,7 +167,11 @@ header .sub{color:var(--t3);font-size:.88rem;margin-top:.35rem}
 .tip.info{background:var(--ink);color:var(--bg)}
 .tip.warn{background:var(--warn-bg);color:var(--warn-fg);border:1px solid var(--warn-bdr)}
 .tip .skull{font-size:.95rem;line-height:1}
+.tip.up{top:auto;bottom:calc(100% + 6px)}
 .tipwrap:hover .tip,.tipwrap:focus-within .tip{display:flex}
+
+@keyframes rowflash{0%{background:var(--accent-dim)}100%{background:transparent}}
+tr.flash{animation:rowflash 1.8s ease-out}
 
 .legend{margin-top:2.5rem;padding-top:1.25rem;border-top:1px solid var(--bdr);display:flex;flex-wrap:wrap;gap:1.4rem;font-size:.75rem;color:var(--t3)}
 .legend-item{display:flex;align-items:center;gap:.4rem}
@@ -220,7 +229,7 @@ header .sub{color:var(--t3);font-size:.88rem;margin-top:.35rem}
     <div class="legend-item"><span class="dlink note" style="pointer-events:none;font-size:.72rem">↗ Blank Note &amp; Practice Problems</span></div>
     <div class="legend-item"><span class="dlink ans" style="pointer-events:none">✓ Answers</span><span>posted after class</span></div>
     <div class="legend-item"><span class="dlink vid" style="pointer-events:none">▶ Video</span></div>
-    <div class="legend-item"><span class="dlink pend" style="pointer-events:none">Greyed out</span><span>hover — coming soon</span></div>
+    <div class="legend-item"><span class="dlink pend" style="pointer-events:none">Greyed out</span><span>coming soon</span></div>
   </div>
 </div>
 
@@ -286,7 +295,7 @@ function noteLinks(day){
     links.push(day.note?live(label,day.note,"note","↗",false):pend(label,"↗"));
     const ansLabel=day.ansLabel||"Answers";
     if(day.ans)links.push(live(ansLabel,day.ans,"ans","✓",true));
-    else if(stateOf(day)!=="future")links.push(pend(ansLabel,"✓"));
+    else links.push(pend(ansLabel,"✓"));
   }
   return links;
 }
@@ -300,7 +309,8 @@ function dayRow(day){
   if(day.flag==="quiz")badge='<span class="badge quiz">Quiz</span>';
   const links=noteLinks(day);
   const extras=(day.extras||[]).map(extraLink).join("");
-  return `<tr class="${cls}">
+  const heroId=heroEntry&&day===heroEntry.day?' id="heroDayRow"':"";
+  return `<tr class="${cls}"${heroId}>
     <td class="td-num">${day.d}</td>
     <td class="td-date">${fmtDate(day.iso)}${st==="today"?'<br><span class="today-pill">Today</span>':""}</td>
     <td><span class="topic">${day.topic}</span>${badge}<div class="lgroup">${links.join("")}</div></td>
@@ -354,20 +364,36 @@ function renderHero(){
     const nl=day.noteLabel||`${day.num} Blank Note & Practice Problems`;
     btns.push(day.note
       ?`<a class="btn pri" href="${esc(day.note)}" target="_blank" rel="noopener">↗ ${nl}</a>`
-      :`<span class="tipwrap"><span class="btn dis">↗ ${nl}</span><span class="tip info">Coming soon</span></span>`);
-    const al=day.ansLabel||"Answers";
-    btns.push(day.ans
-      ?`<span class="tipwrap"><a class="btn ansb" href="${esc(day.ans)}" target="_blank" rel="noopener">✓ ${al}</a><span class="tip warn">${WARN}</span></span>`
-      :`<span class="tipwrap"><span class="btn dis">✓ ${al} — after class</span><span class="tip info">Coming soon</span></span>`);
+      :`<span class="tipwrap"><span class="btn dis">↗ ${nl}</span><span class="tip info up">Coming soon</span></span>`);
+    // Answers only appears here once it's actually linked
+    if(day.ans){
+      const al=day.ansLabel||"Answers";
+      btns.push(`<span class="tipwrap"><a class="btn ansb" href="${esc(day.ans)}" target="_blank" rel="noopener">✓ ${al}</a><span class="tip warn up">${WARN}</span></span>`);
+    }
   }
-  (day.extras||[]).slice(0,2).forEach(e=>{
-    btns.push(`<a class="btn ghost" href="${esc(e[1])}" target="_blank" rel="noopener">${e[0]}</a>`);
-  });
   h.hidden=false;
+  h.setAttribute("role","link");
+  h.setAttribute("tabindex","0");
+  h.setAttribute("aria-label",`Jump to ${day.topic} in the course table`);
   h.innerHTML=`
     <div class="eyebrow"><span class="live"></span>${label} · ${fmtDate(day.iso)} · ${unitLabel(COURSE.units[u],u)}, Day ${day.d}</div>
     <h2>${day.topic}</h2>
-    <div class="acts">${btns.join("")}</div>`;
+    ${btns.length?`<div class="acts">${btns.join("")}</div>`:""}`;
+  function jump(){
+    const unit=document.getElementById("u"+u);
+    if(unit&&!unit.classList.contains("open")){
+      unit.classList.add("open");
+      unit.querySelector(".uhead").setAttribute("aria-expanded","true");
+    }
+    const row=document.getElementById("heroDayRow");
+    if(row){
+      row.scrollIntoView({behavior:"smooth",block:"center"});
+      row.classList.remove("flash");
+      requestAnimationFrame(()=>row.classList.add("flash"));
+    }
+  }
+  h.addEventListener("click",e=>{if(!e.target.closest("a"))jump()});
+  h.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();jump()}});
 }
 
 /* ══════════ Controls ══════════ */
@@ -463,7 +489,7 @@ window.addEventListener("mouseout",e=>{if(!e.relatedTarget){mx=-9999;my=-9999}})
 const POINTS=[];
 window.addEventListener("click",e=>{
   if(reduce)return;
-  if(e.target instanceof Element&&e.target.closest("a,button,input,select,textarea,label,summary"))return;
+  if(e.target instanceof Element&&e.target.closest("a,button,input,select,textarea,label,summary,.hero"))return;
   POINTS.push({x:e.clientX,y:e.clientY,t0:performance.now()});
   if(POINTS.length>10)POINTS.shift();
 });

@@ -8,7 +8,8 @@
    - note: paste the URL of the blank note & practice problems.
            Empty "" shows a greyed-out link with "Coming soon".
    - ans:  paste the URL of the answers. Empty "" is greyed out
-           (and only shown once the day has arrived).
+           with "Coming soon"; once filled it goes live with the
+           ☠︎ "do not look" hover.
    - num:  the note number shown to students ("1.7 Blank Note &
            Practice Problems"). Days with no note (tests, work
            periods) just leave num out.
@@ -32,26 +33,52 @@ const COURSE = {
 
   /* ── UNIT 1 ─────────────────────────────────────────────── */
   {name:"Functions", days:[
-    {d:1, iso:"2026-09-01", topic:"Review of Functions", num:"1.1", note:"", ans:"", extras:[
+    {d:1, iso:"2026-09-01", topic:"Review of Functions", num:"1.1",
+      note:D("1Vvs50UzRnrbaqEv-CZfI-na-WLJXTFIi"), ans:D("1ptPs7517HfxPLUSGRumwIvKYi1BivJMZ"), extras:[
       ["Course Outline","https://docs.google.com/document/d/1TKs_nssQF9nXddPcy7fTJ68k6P8HA77nYvO-fjZeLsQ/edit","doc"],
       ["Ms. Havrot’s Video Lessons","https://www.youtube.com/watch?v=syJBv0xM8B8","vid"],
       ["LG/SC Review from 3U",D("1B4y9b2TMDEZYqG_tXoG2RCuPREQPI9ef"),"doc"],
+      ["Gr 11 Review: I/O Diagrams (completed note)",D("1YPEIejpS5B3b227l-K0iZ-zXASzA4qg4"),"doc"],
+      ["Gr 11 Review: I/O Diagrams (video)",D("1LbDDEDRbLpCa65fwoz4lcb8g4Rc0Rg8D"),"vid"],
     ]},
-    {d:2, iso:"2026-09-02", topic:"Math Overview & Inverses", num:"1.2", note:"", ans:"", extras:[
+    {d:2, iso:"2026-09-02", topic:"Math Overview & Inverses", num:"1.2",
+      note:D("1M_He13KlMBo3XHOrUSBJjP7ewNLlY8IH"), ans:D("1dLF9g2m9_GDRs3oJh6VSP0mPNrVgq6gI"), extras:[
       ["Common Math Symbols",D("14gKLpT3TMJgeAkocJ7890DwQfmMMZb0h"),"doc"],
       ["Math Review / Overview",D("1Yem58YTDsBHEvbqA1RHn0XVhFuMxhxU5"),"doc"],
       ["Answers",D("1-Y8SYfMiWKaX3J9d19JCi2G68VRsv6sd"),"ans"],
       ["Parent Functions Reference Sheet",D("1hXmcBsb5AuOBgLMx3_UVnOxelnfK8Nlk"),"doc"],
+      ["Answers",D("1vDKHAQEk87bZNMNcaQESGIKTYGY0qLR7"),"ans"],
       ["Old Properties Note",D("1YnFu4xlmnY6ZzNfPNryArULRnzzO_U2J"),"doc"],
       ["Answers",D("1ZOBNAAqQZmaaQPKGXZuiEGZoqn825p7s"),"ans"],
     ]},
-    {d:3, iso:"2026-09-03", topic:"Mathematical Patterns", num:"1.3", note:"", ans:"", extras:[
+    {d:3, iso:"2026-09-03", topic:"Mathematical Patterns", num:"1.3",
+      note:D("11neyNblyF6QVFaS8IbXfjWW4uGe4ubQ0"), ans:"", extras:[
       ["Domain & Range Worksheet",D("12D6Wf_aWjvp3TMwibvPRFKc4oUhs6nWw"),"doc"],
       ["Interval Notation","https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:introduction-to-the-domain-and-range-of-a-function/v/introduction-to-interval-notation","vid"],
       ["Domain & Range of Graphs","https://www.youtube.com/watch?v=YjVc9ookvRs","vid"],
     ]},
-    {d:4, iso:"2026-09-04", topic:"Absolute Value", num:"1.4", note:"", ans:"", extras:[]},
-    {d:5, iso:"2026-09-08", topic:"Radians", num:"1.5", note:"", ans:"", extras:[
+    {d:4, iso:"2026-09-04", topic:"Absolute Value", num:"1.4",
+      note:D("1ucaobGi7vXcFNTL3N1rv3Sdw_IJFbIdy"), ans:"", extras:[
+      ["Absolute Value Inequalities","https://www.youtube.com/watch?v=iI_2Piwn_og","vid"],
+      ["Old Transformations Note",D("1ZpwnmA9L5EtmBjmAJXtGaUnSIZ5p5bo7"),"doc"],
+      ["Answers",D("1Qo82oyxLpLBx22lWTQP23oanJWk2YA--"),"ans"],
+      ["Answers (with I/O)",D("1Jjop5z_MzxaVEGSWv522zKxDaZrAdPcS"),"ans"],
+    ]},
+    {d:5, iso:"2026-09-08", topic:"Radians", num:"1.5",
+      note:D("1zJIxYcSHUWktPCVmSHH20MHFgXw1oEBB"), ans:"", extras:[
+      ["Exact Special Triangles Practice",D("1Pwyg2hp217LGKfr8QH9AUmU2CtakHOqR"),"doc"],
+      ["Answers",D("1QAta6TpNRw6CE_VCZWTIcZ0m2z8Vb0hA"),"ans"],
+      ["Radians Worksheet","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed50f5f0818b1a92890325/1642942709577/hw1s++4.1+Radian+Measure.pdf","doc"],
+      ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed50fa557fe87e37110761/1642942714576/hw1t++4.1+Radian+Measure.pdf","ans"],
+      ["In-Class Note: Speed vs Angular Speed",D("1JH_B_ekPRnYrK9rNLOapbvjcFWkerC3T"),"doc"],
+    ]},
+    {d:6, iso:"2026-09-09", topic:"Trig: Inverse vs Reciprocal", num:"1.6",
+      note:D("1bfcQnBvBYRWCGHbuYNi-H1n5_N8_f0m8"), ans:"", extras:[
+      ["More Trigonometry Practice",D("1eDk4okSLmzeoMjnnK6yN0d1Ox9MnDhtX"),"doc"],
+      ["Answers",D("1OEWpsnL7f8NhkCcKfb6NI6Z5HZglpEJN"),"ans"],
+    ]},
+    {d:7, iso:"2026-09-10", topic:"Transformations", num:"1.7",
+      note:D("1jYmqWKEeFzGl9SL205BMCM-XLF9834xs"), ans:"", extras:[
       ["I/O Diagrams & Function Notation",D("13cWi_5WSXjQWA0TnT_i9qMA40U5nXhgC"),"doc"],
       ["Answers",D("13e34ICvMaArFfvaRYvzmr_DXwjkFHG6P"),"ans"],
       ["I/O Diagrams with Quadratics",D("13_rwK9BRjyIrzV8DOCfrbeD0dA5Oohx1"),"doc"],
@@ -59,35 +86,36 @@ const COURSE = {
       ["Extra Transformation Question",D("1HzeS8WFhg0o82kkWWNNYpDUzlRLQKYoQ"),"doc"],
       ["Extra Transformation Practice (with order)","https://docs.google.com/document/d/1IUDImHOCrs2K8wxj4wLvBMWCC6JC-hVvTHJC-alk5Tw/edit","doc"],
     ]},
-    {d:6, iso:"2026-09-09", topic:"Trig: Inverse vs Reciprocal", num:"1.6", note:"", ans:"", extras:[
-      ["Absolute Value Inequalities","https://www.youtube.com/watch?v=iI_2Piwn_og","vid"],
-      ["Old Transformations Note",D("1ZpwnmA9L5EtmBjmAJXtGaUnSIZ5p5bo7"),"doc"],
-      ["Answers",D("1Qo82oyxLpLBx22lWTQP23oanJWk2YA--"),"ans"],
-      ["Answers (with I/O)",D("1Jjop5z_MzxaVEGSWv522zKxDaZrAdPcS"),"ans"],
-    ]},
-    {d:7, iso:"2026-09-10", topic:"Transformations", num:"1.7", note:"", ans:"", extras:[
+    {d:8, iso:"2026-09-11", topic:"Properties of Functions", num:"1.8",
+      note:D("15tvtoQ5Fqa6sTZn36eorZOLUpHvUHJIp"), ans:"", extras:[
       ["Properties of Functions Review",D("11ljLhzas7erncDuHmSnDFaCkPd6FQw6q"),"doc"],
       ["Answers",D("11sqQDo5wI-GfV2fxV18NWRLcMQZTW5hq"),"ans"],
       ["Properties Challenge",D("1RKGC6FyeFK36B8_r4CT47w4SNhG6JvK9"),"doc"],
       ["Answers",D("1SE1I-3qiHlAk0LjJP0Bf2i61zgCSxr04"),"ans"],
     ]},
-    {d:8, iso:"2026-09-11", topic:"Properties of Functions", num:"1.8", note:"", ans:"", extras:[
+    {d:9, iso:"2026-09-14", topic:"Piecewise Functions", num:"1.9",
+      note:D("1QlLtIxLiOZvpnkTgytTjSbvrnaiVp_p0"), ans:"", extras:[
       ["Function Notation Extra Practice","https://docs.google.com/document/d/1n1wRsbtm4vZTYPBxOE6kh2rNKuBrAaVzsSf-B-oz2oo/edit","doc"],
-    ]},
-    {d:9, iso:"2026-09-14", topic:"Piecewise Functions", num:"1.9", note:"", ans:"", extras:[
       ["Old Inverse Relations Note",D("1_6elt4Hz9JXp6hep4YTfQ7hZWofk2tS0"),"doc"],
       ["Answers",D("1SCks1LLe3LsAFQzm7S-g8MhlLET3Fids"),"ans"],
     ]},
     {d:10, iso:"2026-09-15", topic:"Practice Quiz · Work Period", flag:"quiz",
-      noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[
+      noteLabel:"Practice Quiz", ansLabel:"Answers",
+      note:D("1Mf1bTmMkrUsr7jJ5ihlRm49vRLzKJQbU"), ans:"", extras:[
       ["Function Notation Example","https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/8th-functions-and-function-notation/v/understanding-function-notation-example-3","vid"],
       ["Composite Functions Examples","https://www.youtube.com/watch?v=ZFPkQkURSxk","vid"],
     ]},
-    {d:11, iso:"2026-09-16", topic:"Operations with Functions", num:"1.10", note:"", ans:"", extras:[]},
-    {d:12, iso:"2026-09-17", topic:"Composite Functions", num:"1.11", note:"", ans:"", extras:[]},
-    {d:13, iso:"2026-09-18", topic:"Modelling Investigation", note:"", ans:"", extras:[]},
-    {d:14, iso:"2026-09-21", topic:"Logarithmic Functions", num:"1.12", note:"", ans:"", extras:[]},
-    {d:15, iso:"2026-09-22", topic:"Solving the Unsolvable", num:"1.13", note:"", ans:"", extras:[]},
+    {d:11, iso:"2026-09-16", topic:"Operations with Functions", num:"1.10",
+      note:D("17hI0NwthW_vt91YgnpyW-06xle90PAMg"), ans:"", extras:[]},
+    {d:12, iso:"2026-09-17", topic:"Composite Functions", num:"1.11",
+      note:D("1xQ_qVFNHI7Eud09kgMYNCEYhEO109qFR"), ans:"", extras:[]},
+    {d:13, iso:"2026-09-18", topic:"Modelling Investigation",
+      noteLabel:"Modelling Student Sheet", ansLabel:"Answers",
+      note:D("1-Y0FdnjHSOzbROEVgHE6PNYCC_jJd4Qx"), ans:"", extras:[]},
+    {d:14, iso:"2026-09-21", topic:"Logarithmic Functions", num:"1.12",
+      note:D("1zLtR8wOeUk79-Jfs4b9c9-ShYPt3Ott7"), ans:"", extras:[]},
+    {d:15, iso:"2026-09-22", topic:"Solving the Unsolvable", num:"1.13",
+      note:D("1LoKvDxo4CwPgx3WK0v4WrM-rmDf9XZfL"), ans:"", extras:[]},
     {d:16, iso:"2026-09-23", topic:"Review", flag:"review", note:"", ans:"", extras:[
       ["Review Learning Goals & Success Criteria","https://docs.google.com/document/d/1PM-Pt9rS_Bh1LQl8MU7-IcBnvwCZgj3dwJXL6Ghl7E0/edit","doc"],
       ["LG/SC with Possible Questions & Solutions",D("11ghnyya9SE1PYG3VXTOaKdcJt8iM1h5J"),"doc"],
@@ -239,45 +267,34 @@ const COURSE = {
 
   /* ── UNIT 5 ─────────────────────────────────────────────── */
   {name:"Trigonometric Functions", days:[
-    {d:1, iso:"", topic:"Trig Review", num:"5.1", note:"", ans:"", extras:[
-      ["More Trigonometry Practice",D("1eDk4okSLmzeoMjnnK6yN0d1Ox9MnDhtX"),"doc"],
-      ["Answers",D("1OEWpsnL7f8NhkCcKfb6NI6Z5HZglpEJN"),"ans"],
-    ]},
-    {d:2, iso:"", topic:"Radians", num:"5.2", note:"", ans:"", extras:[
-      ["Exact Special Triangles Practice",D("1Pwyg2hp217LGKfr8QH9AUmU2CtakHOqR"),"doc"],
-      ["Answers",D("1QAta6TpNRw6CE_VCZWTIcZ0m2z8Vb0hA"),"ans"],
-      ["Radians Worksheet","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed50f5f0818b1a92890325/1642942709577/hw1s++4.1+Radian+Measure.pdf","doc"],
-      ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed50fa557fe87e37110761/1642942714576/hw1t++4.1+Radian+Measure.pdf","ans"],
-      ["In-Class Note: Speed vs Angular Speed",D("1JH_B_ekPRnYrK9rNLOapbvjcFWkerC3T"),"doc"],
-    ]},
-    {d:3, iso:"2026-11-11", topic:"Trig Ratios with Radians", num:"5.3", note:"", ans:"", extras:[
+    {d:1, iso:"2026-11-11", topic:"Trig Ratios with Radians", num:"5.1", note:"", ans:"", extras:[
       ["SOH CAH TOA Song","https://www.youtube.com/watch?v=PIWJo5uK3Fo","vid"],
     ]},
-    {d:4, iso:"2026-11-12", topic:"Graphs of Trig Functions", num:"5.4", note:"", ans:"", extras:[
+    {d:2, iso:"2026-11-12", topic:"Graphs of Trig Functions", num:"5.2", note:"", ans:"", extras:[
       ["Trig Angles Simulation","https://phet.colorado.edu/sims/html/trig-tour/latest/trig-tour_en.html","doc"],
       ["Transformations Review",D("1R_qADObrxDzdGpxFfIlRo2uUdJdsdo9z"),"doc"],
       ["Answers",D("1RUav7ZtepkNj-XT8Z3Q1G_Qf1_wkyxBv"),"ans"],
     ]},
-    {d:5, iso:"2026-11-13", topic:"Practice Quiz", flag:"quiz",
+    {d:3, iso:"2026-11-13", topic:"Practice Quiz", flag:"quiz",
       noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[]},
-    {d:6, iso:"2026-11-16", topic:"Transformations of Trig Functions", num:"5.5", note:"", ans:"", extras:[
+    {d:4, iso:"2026-11-16", topic:"Transformations of Trig Functions", num:"5.3", note:"", ans:"", extras:[
       ["Graphing Extra Practice (with answers)",D("1R8ytvzOWMppeLJhsje4RBBroGERjIdL5"),"doc"],
     ]},
-    {d:7, iso:"2026-11-17", topic:"Reciprocal Trig Functions", num:"5.6", note:"", ans:"", extras:[
+    {d:5, iso:"2026-11-17", topic:"Reciprocal Trig Functions", num:"5.4", note:"", ans:"", extras:[
       ["Graphing All Trig Functions Worksheet","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed517c0e1ca17f50545404/1642942844717/hw3s++Graphing+Trig+Functions.pdf","doc"],
       ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed5182684ee5656cdedfea/1642942850446/hw3t++Graphing+Trig+Functions.pdf","ans"],
     ]},
-    {d:8, iso:"2026-11-18", topic:"Modelling with Trig Functions", num:"5.7", note:"", ans:"", extras:[
+    {d:6, iso:"2026-11-18", topic:"Modelling with Trig Functions", num:"5.5", note:"", ans:"", extras:[
       ["Trig Applications Worksheet","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed520c2d3b9c7554d007c3/1642942988894/hw5s++Trig+Applications.pdf","doc"],
       ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed52117618b227cf316b53/1642942994194/hw5t++Trig+Applications.pdf","ans"],
     ]},
-    {d:9, iso:"2026-11-19", topic:"Review", flag:"review", note:"", ans:"", extras:[
+    {d:7, iso:"2026-11-19", topic:"Review", flag:"review", note:"", ans:"", extras:[
       ["Extra Review Questions","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed524a1f188b0ab84d4079/1642943050935/Unit+4+Review++Trig+in+Radians.pdf","doc"],
       ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed525acc0eeb42ab7837de/1642943066952/Unit+4+Review++Trig+in+Radians+SOLUTIONS.pdf","ans"],
     ]},
-    {d:10, iso:"2026-11-20", topic:"Trig Rates of Change", num:"5.8", note:"", ans:"", extras:[]},
-    {d:11, iso:"2026-11-24", topic:"Trig Functions Test (without calculators)", flag:"test", extras:[]},
-    {d:12, iso:"2026-11-25", topic:"Trig Functions Test (with calculators)", flag:"test", extras:[]},
+    {d:8, iso:"2026-11-20", topic:"Trig Rates of Change", num:"5.6", note:"", ans:"", extras:[]},
+    {d:9, iso:"2026-11-24", topic:"Trig Functions Test (without calculators)", flag:"test", extras:[]},
+    {d:10, iso:"2026-11-25", topic:"Trig Functions Test (with calculators)", flag:"test", extras:[]},
   ]},
 
   /* ── UNIT 6 ─────────────────────────────────────────────── */
@@ -331,7 +348,7 @@ const COURSE = {
 
   /* ── UNIT 7 ─────────────────────────────────────────────── */
   {name:"Exponentials & Logarithms", days:[
-    {d:1, iso:"2026-12-14", topic:"Logarithmic Functions", num:"7.1", note:"", ans:"", extras:[
+    {d:1, iso:"2026-12-14", topic:"Log Review", num:"7.1", note:"", ans:"", extras:[
       ["Short-cut to Solve ANY Problem","https://www.youtube.com/watch?v=dQw4w9WgXcQ","vid"],
       ["Ms. Havrot’s Videos: Exponentials & Logs","https://www.youtube.com/watch?v=w-2ku9QNYlA&list=PLGinkJ_ZMO2HQwGf8mAmHGPQTJr1_faeF","vid"],
     ]},
