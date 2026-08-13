@@ -28,13 +28,15 @@ const D = id => `https://drive.google.com/file/d/${id}/view`;
 const COURSE = {
   code: "MHF4U",
   title: "Advanced Functions",
-  sub: "Grade 12 · University Preparation · 2026–27",
+  sub: "Grade 12 · University Preparation",
   units: [
 
   /* ── UNIT 1 ─────────────────────────────────────────────── */
+  /* When done:   ans:D("1ptPs7517HfxPLUSGRumwIvKYi1BivJMZ")    */
+
   {name:"Functions", days:[
     {d:1, iso:"2026-09-01", topic:"Review of Functions", num:"1.1",
-      note:D("1Vvs50UzRnrbaqEv-CZfI-na-WLJXTFIi"), ans:D("1ptPs7517HfxPLUSGRumwIvKYi1BivJMZ"), extras:[
+      note:D("1Vvs50UzRnrbaqEv-CZfI-na-WLJXTFIi"), ans:"", extras:[
       ["Course Outline","https://docs.google.com/document/d/1TKs_nssQF9nXddPcy7fTJ68k6P8HA77nYvO-fjZeLsQ/edit","doc"],
       ["Ms. Havrot’s Video Lessons","https://www.youtube.com/watch?v=syJBv0xM8B8","vid"],
       ["LG/SC Review from 3U",D("1B4y9b2TMDEZYqG_tXoG2RCuPREQPI9ef"),"doc"],
@@ -46,7 +48,7 @@ const COURSE = {
       ["Domain & Range of Graphs","https://www.youtube.com/watch?v=YjVc9ookvRs","vid"],
     ]},
     {d:2, iso:"2026-09-02", topic:"Math Overview & Inverses", num:"1.2",
-      note:D("1M_He13KlMBo3XHOrUSBJjP7ewNLlY8IH"), ans:D("1dLF9g2m9_GDRs3oJh6VSP0mPNrVgq6gI"), extras:[
+      note:D("1M_He13KlMBo3XHOrUSBJjP7ewNLlY8IH"), ans:"", extras:[
       ["Common Math Symbols",D("14gKLpT3TMJgeAkocJ7890DwQfmMMZb0h"),"doc"],
       ["Math Review / Overview",D("1Yem58YTDsBHEvbqA1RHn0XVhFuMxhxU5"),"doc"],
       ["Answers",D("1-Y8SYfMiWKaX3J9d19JCi2G68VRsv6sd"),"ans"],
