@@ -40,34 +40,39 @@ const COURSE = {
       ["LG/SC Review from 3U",D("1B4y9b2TMDEZYqG_tXoG2RCuPREQPI9ef"),"doc"],
       ["Gr 11 Review: I/O Diagrams (completed note)",D("1YPEIejpS5B3b227l-K0iZ-zXASzA4qg4"),"doc"],
       ["Gr 11 Review: I/O Diagrams (video)",D("1LbDDEDRbLpCa65fwoz4lcb8g4Rc0Rg8D"),"vid"],
+      ["Old Note: Functions, Domain & Range",D("1YnFu4xlmnY6ZzNfPNryArULRnzzO_U2J"),"doc"],
+      ["Answers",D("1ZOBNAAqQZmaaQPKGXZuiEGZoqn825p7s"),"ans"],
+      ["Domain & Range Worksheet (answers included)",D("12D6Wf_aWjvp3TMwibvPRFKc4oUhs6nWw"),"doc"],
+      ["Domain & Range of Graphs","https://www.youtube.com/watch?v=YjVc9ookvRs","vid"],
     ]},
     {d:2, iso:"2026-09-02", topic:"Math Overview & Inverses", num:"1.2",
       note:D("1M_He13KlMBo3XHOrUSBJjP7ewNLlY8IH"), ans:D("1dLF9g2m9_GDRs3oJh6VSP0mPNrVgq6gI"), extras:[
       ["Common Math Symbols",D("14gKLpT3TMJgeAkocJ7890DwQfmMMZb0h"),"doc"],
       ["Math Review / Overview",D("1Yem58YTDsBHEvbqA1RHn0XVhFuMxhxU5"),"doc"],
       ["Answers",D("1-Y8SYfMiWKaX3J9d19JCi2G68VRsv6sd"),"ans"],
-      ["Parent Functions Reference Sheet",D("1hXmcBsb5AuOBgLMx3_UVnOxelnfK8Nlk"),"doc"],
-      ["Answers",D("1vDKHAQEk87bZNMNcaQESGIKTYGY0qLR7"),"ans"],
-      ["Old Properties Note",D("1YnFu4xlmnY6ZzNfPNryArULRnzzO_U2J"),"doc"],
-      ["Answers",D("1ZOBNAAqQZmaaQPKGXZuiEGZoqn825p7s"),"ans"],
+      ["Parent Functions Reference Sheet","https://docs.google.com/document/d/1KSkrBrt0CvC0qH5nO9jl9vRo0MN1G6TonrKb_tgzXcY/edit","doc"],
+      ["Answers",D("1hXmcBsb5AuOBgLMx3_UVnOxelnfK8Nlk"),"ans"],
+      ["Old Inverse Relations Note",D("1_6elt4Hz9JXp6hep4YTfQ7hZWofk2tS0"),"doc"],
+      ["Answers",D("1SCks1LLe3LsAFQzm7S-g8MhlLET3Fids"),"ans"],
     ]},
+    /* Day 3's old domain & range extras moved to Day 1 (domain/range) and Day 8
+       (interval notation); these replacements match 1.3's actual topics. */
     {d:3, iso:"2026-09-03", topic:"Mathematical Patterns", num:"1.3",
       note:D("11neyNblyF6QVFaS8IbXfjWW4uGe4ubQ0"), ans:"", extras:[
-      ["Domain & Range Worksheet",D("12D6Wf_aWjvp3TMwibvPRFKc4oUhs6nWw"),"doc"],
-      ["Interval Notation","https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:introduction-to-the-domain-and-range-of-a-function/v/introduction-to-interval-notation","vid"],
-      ["Domain & Range of Graphs","https://www.youtube.com/watch?v=YjVc9ookvRs","vid"],
+      ["First & Second Differences","https://www.youtube.com/watch?v=tBdA6ltSi1w","vid"],
+      ["Ms. Havrot: Arithmetic Sequences (7.1)","https://www.youtube.com/watch?v=Kywsd6LKXKg","vid"],
+      ["Ms. Havrot: Geometric Sequences (7.2)","https://www.youtube.com/watch?v=jtVesKxLyIA","vid"],
+      ["Ms. Havrot: Compound Interest (8.2)","https://www.youtube.com/watch?v=epa2huwxGUI","vid"],
+      ["Ms. Havrot: Pascal’s Triangle & Binomial Expansion (7.7)","https://www.youtube.com/watch?v=_alTrrhD4v8","vid"],
+      ["Sequences Worksheet (answers included)","https://www.jensenmath.ca/s/Sequences-worksheet-1.pdf","doc"],
+      ["Answers","https://www.jensenmath.ca/s/Sequences-worksheet-1-SOLUTIONS.pdf","ans"],
     ]},
     {d:4, iso:"2026-09-04", topic:"Absolute Value", num:"1.4",
       note:D("1ucaobGi7vXcFNTL3N1rv3Sdw_IJFbIdy"), ans:"", extras:[
       ["Absolute Value Inequalities","https://www.youtube.com/watch?v=iI_2Piwn_og","vid"],
-      ["Old Transformations Note",D("1ZpwnmA9L5EtmBjmAJXtGaUnSIZ5p5bo7"),"doc"],
-      ["Answers",D("1Qo82oyxLpLBx22lWTQP23oanJWk2YA--"),"ans"],
-      ["Answers (with I/O)",D("1Jjop5z_MzxaVEGSWv522zKxDaZrAdPcS"),"ans"],
     ]},
     {d:5, iso:"2026-09-08", topic:"Radians", num:"1.5",
       note:D("1zJIxYcSHUWktPCVmSHH20MHFgXw1oEBB"), ans:"", extras:[
-      ["Exact Special Triangles Practice",D("1Pwyg2hp217LGKfr8QH9AUmU2CtakHOqR"),"doc"],
-      ["Answers",D("1QAta6TpNRw6CE_VCZWTIcZ0m2z8Vb0hA"),"ans"],
       ["Radians Worksheet","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed50f5f0818b1a92890325/1642942709577/hw1s++4.1+Radian+Measure.pdf","doc"],
       ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed50fa557fe87e37110761/1642942714576/hw1t++4.1+Radian+Measure.pdf","ans"],
       ["In-Class Note: Speed vs Angular Speed",D("1JH_B_ekPRnYrK9rNLOapbvjcFWkerC3T"),"doc"],
@@ -76,6 +81,8 @@ const COURSE = {
       note:D("1bfcQnBvBYRWCGHbuYNi-H1n5_N8_f0m8"), ans:"", extras:[
       ["More Trigonometry Practice",D("1eDk4okSLmzeoMjnnK6yN0d1Ox9MnDhtX"),"doc"],
       ["Answers",D("1OEWpsnL7f8NhkCcKfb6NI6Z5HZglpEJN"),"ans"],
+      ["Exact Special Triangles Practice",D("1Pwyg2hp217LGKfr8QH9AUmU2CtakHOqR"),"doc"],
+      ["Answers",D("1QAta6TpNRw6CE_VCZWTIcZ0m2z8Vb0hA"),"ans"],
     ]},
     {d:7, iso:"2026-09-10", topic:"Transformations", num:"1.7",
       note:D("1jYmqWKEeFzGl9SL205BMCM-XLF9834xs"), ans:"", extras:[
@@ -85,6 +92,9 @@ const COURSE = {
       ["Answers",D("13he6tfK3CSu4LGMYGmOCR2xfykVBTdRO"),"ans"],
       ["Extra Transformation Question",D("1HzeS8WFhg0o82kkWWNNYpDUzlRLQKYoQ"),"doc"],
       ["Extra Transformation Practice (with order)","https://docs.google.com/document/d/1IUDImHOCrs2K8wxj4wLvBMWCC6JC-hVvTHJC-alk5Tw/edit","doc"],
+      ["Old Transformations Note",D("1ZpwnmA9L5EtmBjmAJXtGaUnSIZ5p5bo7"),"doc"],
+      ["Answers",D("1Qo82oyxLpLBx22lWTQP23oanJWk2YA--"),"ans"],
+      ["Answers (with I/O)",D("1Jjop5z_MzxaVEGSWv522zKxDaZrAdPcS"),"ans"],
     ]},
     {d:8, iso:"2026-09-11", topic:"Properties of Functions", num:"1.8",
       note:D("15tvtoQ5Fqa6sTZn36eorZOLUpHvUHJIp"), ans:"", extras:[
@@ -92,30 +102,45 @@ const COURSE = {
       ["Answers",D("11sqQDo5wI-GfV2fxV18NWRLcMQZTW5hq"),"ans"],
       ["Properties Challenge",D("1RKGC6FyeFK36B8_r4CT47w4SNhG6JvK9"),"doc"],
       ["Answers",D("1SE1I-3qiHlAk0LjJP0Bf2i61zgCSxr04"),"ans"],
+      ["Interval Notation","https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:introduction-to-the-domain-and-range-of-a-function/v/introduction-to-interval-notation","vid"],
     ]},
     {d:9, iso:"2026-09-14", topic:"Piecewise Functions", num:"1.9",
       note:D("1QlLtIxLiOZvpnkTgytTjSbvrnaiVp_p0"), ans:"", extras:[
       ["Function Notation Extra Practice","https://docs.google.com/document/d/1n1wRsbtm4vZTYPBxOE6kh2rNKuBrAaVzsSf-B-oz2oo/edit","doc"],
-      ["Old Inverse Relations Note",D("1_6elt4Hz9JXp6hep4YTfQ7hZWofk2tS0"),"doc"],
-      ["Answers",D("1SCks1LLe3LsAFQzm7S-g8MhlLET3Fids"),"ans"],
     ]},
     {d:10, iso:"2026-09-15", topic:"Practice Quiz · Work Period", flag:"quiz",
       noteLabel:"Practice Quiz", ansLabel:"Answers",
       note:D("1Mf1bTmMkrUsr7jJ5ihlRm49vRLzKJQbU"), ans:"", extras:[
       ["Function Notation Example","https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/8th-functions-and-function-notation/v/understanding-function-notation-example-3","vid"],
-      ["Composite Functions Examples","https://www.youtube.com/watch?v=ZFPkQkURSxk","vid"],
     ]},
     {d:11, iso:"2026-09-16", topic:"Operations with Functions", num:"1.10",
-      note:D("17hI0NwthW_vt91YgnpyW-06xle90PAMg"), ans:"", extras:[]},
+      note:D("17hI0NwthW_vt91YgnpyW-06xle90PAMg"), ans:"", extras:[
+      ["Ms. Havrot: Sums & Differences of Functions (9.2)","https://www.youtube.com/watch?v=nBAffHJK2oA","vid"],
+      ["Ms. Havrot: Products of Functions (9.3)","https://www.youtube.com/watch?v=Y-JY4aHhJwI","vid"],
+    ]},
     {d:12, iso:"2026-09-17", topic:"Composite Functions", num:"1.11",
-      note:D("1xQ_qVFNHI7Eud09kgMYNCEYhEO109qFR"), ans:"", extras:[]},
+      note:D("1xQ_qVFNHI7Eud09kgMYNCEYhEO109qFR"), ans:"", extras:[
+      ["Composite Functions Examples","https://www.youtube.com/watch?v=ZFPkQkURSxk","vid"],
+      ["Ms. Havrot: Composition of Functions (9.5)","https://www.youtube.com/watch?v=9mG6iWo8TJA","vid"],
+    ]},
+    /* 9.7 walks through a modelling problem — worth flagging as an after-class
+       resource so it does not pre-empt the investigation. */
     {d:13, iso:"2026-09-18", topic:"Modelling Investigation",
       noteLabel:"Modelling Student Sheet", ansLabel:"Answers",
-      note:D("1-Y0FdnjHSOzbROEVgHE6PNYCC_jJd4Qx"), ans:"", extras:[]},
+      note:D("1-Y0FdnjHSOzbROEVgHE6PNYCC_jJd4Qx"), ans:"", extras:[
+      ["Desmos: Fitting a Curve to Data (Regressions)","https://help.desmos.com/hc/en-us/articles/4406972958733-Regressions","doc"],
+      ["Ms. Havrot: Modelling with Functions (9.7)","https://www.youtube.com/watch?v=EpwghsfP8-8","vid"],
+    ]},
     {d:14, iso:"2026-09-21", topic:"Logarithmic Functions", num:"1.12",
-      note:D("1zLtR8wOeUk79-Jfs4b9c9-ShYPt3Ott7"), ans:"", extras:[]},
+      note:D("1zLtR8wOeUk79-Jfs4b9c9-ShYPt3Ott7"), ans:"", extras:[
+      ["Ms. Havrot’s Video Lessons on Logs (Ch. 8)","https://www.youtube.com/watch?v=w-2ku9QNYlA&list=PLGinkJ_ZMO2HQwGf8mAmHGPQTJr1_faeF","vid"],
+      ["Short-cut to solve ANY Problem","https://www.youtube.com/watch?v=dQw4w9WgXcQ","vid"],
+    ]},
     {d:15, iso:"2026-09-22", topic:"Solving the Unsolvable", num:"1.13",
-      note:D("1LoKvDxo4CwPgx3WK0v4WrM-rmDf9XZfL"), ans:"", extras:[]},
+      note:D("1LoKvDxo4CwPgx3WK0v4WrM-rmDf9XZfL"), ans:"", extras:[
+      ["Ms. Havrot: Solving Equations & Inequalities (9.6)","https://www.youtube.com/watch?v=TwNCtmrbMBE","vid"],
+      ["Solving Equations by Graphing","https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:eq/x2ec2f6f830c9fb89:sol-eq-graph/v/graphically-solving-equations-calculator","vid"],
+    ]},
     {d:16, iso:"2026-09-23", topic:"Review", flag:"review", note:"", ans:"", extras:[
       ["Review Learning Goals & Success Criteria","https://docs.google.com/document/d/1PM-Pt9rS_Bh1LQl8MU7-IcBnvwCZgj3dwJXL6Ghl7E0/edit","doc"],
       ["LG/SC with Possible Questions & Solutions",D("11ghnyya9SE1PYG3VXTOaKdcJt8iM1h5J"),"doc"],
@@ -219,7 +244,10 @@ const COURSE = {
       ["Extra Question",D("1aBXsRzX4CcE-guWcFp-sip7J8gAH4a_0"),"doc"],
       ["Answers",D("1aC4TJKD2T56iRg7KR7Qjj3yTo4AtPLc8"),"ans"],
     ]},
-    {d:10, iso:"2026-10-27", topic:"Review", flag:"review", note:"", ans:"", extras:[]},
+    {d:10, iso:"2026-10-27", topic:"Review", flag:"review", note:"", ans:"", extras:[
+      ["Ms. Havrot: Chapter 4 Practice Test","https://www.youtube.com/watch?v=d6mpf7rwVQo","vid"],
+      ["Ms. Havrot: Rates of Change Summary (2.3–2.5)","https://www.youtube.com/watch?v=bctH4jVfFKY","vid"],
+    ]},
     {d:11, iso:"2026-10-28", topic:"Unit Test", flag:"test", extras:[]},
   ]},
 
@@ -257,7 +285,9 @@ const COURSE = {
       ["Practice Solving Rational Inequalities",D("1befmdB8vadxFu9GD8gmcUqvcW9CLbQR_"),"doc"],
       ["Answers",D("1bwJUEgfAJcjL_xL_KtGBEIAf5C9oEpEi"),"ans"],
     ]},
-    {d:7, iso:"2026-11-06", topic:"ROC of Rational Functions", num:"4.6", note:"", ans:"", extras:[]},
+    {d:7, iso:"2026-11-06", topic:"ROC of Rational Functions", num:"4.6", note:"", ans:"", extras:[
+      ["Ms. Havrot: Rates of Change in Rational Functions (5.6)","https://www.youtube.com/watch?v=T4GJeS4G9gc","vid"],
+    ]},
     {d:8, iso:"2026-11-09", topic:"Review", flag:"review", note:"", ans:"", extras:[
       ["Challenge Questions",D("1es6G1-ukzAGTbwJ5Vv_nPvFkKEk7ltxc"),"doc"],
       ["Answers",D("10PWXTJC3uXKDcmb_l4CIvDhr2aPQ-R8k"),"ans"],
@@ -276,7 +306,10 @@ const COURSE = {
       ["Answers",D("1RUav7ZtepkNj-XT8Z3Q1G_Qf1_wkyxBv"),"ans"],
     ]},
     {d:3, iso:"2026-11-13", topic:"Practice Quiz", flag:"quiz",
-      noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[]},
+      noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[
+      ["Trig Ratios & Special Angles Worksheet","https://www.jensenmath.ca/s/hw2s-42-Trig-Ratios-and-Special-Angles.pdf","doc"],
+      ["Answers","https://www.jensenmath.ca/s/hw2t-42-Trig-Ratios-and-Special-Angles.pdf","ans"],
+    ]},
     {d:4, iso:"2026-11-16", topic:"Transformations of Trig Functions", num:"5.3", note:"", ans:"", extras:[
       ["Graphing Extra Practice (with answers)",D("1R8ytvzOWMppeLJhsje4RBBroGERjIdL5"),"doc"],
     ]},
@@ -292,7 +325,9 @@ const COURSE = {
       ["Extra Review Questions","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed524a1f188b0ab84d4079/1642943050935/Unit+4+Review++Trig+in+Radians.pdf","doc"],
       ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed525acc0eeb42ab7837de/1642943066952/Unit+4+Review++Trig+in+Radians+SOLUTIONS.pdf","ans"],
     ]},
-    {d:8, iso:"2026-11-20", topic:"Trig Rates of Change", num:"5.6", note:"", ans:"", extras:[]},
+    {d:8, iso:"2026-11-20", topic:"Trig Rates of Change", num:"5.6", note:"", ans:"", extras:[
+      ["Ms. Havrot: Rates of Change in Trig Functions (6.7)","https://www.youtube.com/watch?v=_wvW1D-EBuQ","vid"],
+    ]},
     {d:9, iso:"2026-11-24", topic:"Trig Functions Test (without calculators)", flag:"test", extras:[]},
     {d:10, iso:"2026-11-25", topic:"Trig Functions Test (with calculators)", flag:"test", extras:[]},
   ]},
@@ -342,7 +377,9 @@ const COURSE = {
       ["Practice Tests (Hudgin)",D("1VLV6ITAq9IWBPbJSdsq7pi8pbk2b9plT"),"doc"],
       ["Answers",D("16nDXz6px2P8KvPCcWEcVTxbvwvFQUHu0"),"ans"],
     ]},
-    {d:11, iso:"2026-12-10", topic:"Review II", flag:"review", note:"", ans:"", extras:[]},
+    {d:11, iso:"2026-12-10", topic:"Review II", flag:"review", note:"", ans:"", extras:[
+      ["Ms. Havrot: Chapter 7 Practice Test","https://www.youtube.com/watch?v=Wo06EElyhKw","vid"],
+    ]},
     {d:12, iso:"2026-12-11", topic:"Unit Test", flag:"test", extras:[]},
   ]},
 
@@ -352,26 +389,43 @@ const COURSE = {
       ["Short-cut to Solve ANY Problem","https://www.youtube.com/watch?v=dQw4w9WgXcQ","vid"],
       ["Ms. Havrot’s Videos: Exponentials & Logs","https://www.youtube.com/watch?v=w-2ku9QNYlA&list=PLGinkJ_ZMO2HQwGf8mAmHGPQTJr1_faeF","vid"],
     ]},
-    {d:2, iso:"2026-12-15", topic:"Transformations of Log Functions", num:"7.2", note:"", ans:"", extras:[]},
+    {d:2, iso:"2026-12-15", topic:"Transformations of Log Functions", num:"7.2", note:"", ans:"", extras:[
+      ["Ms. Havrot: Transformations of Log Functions (8.2)","https://www.youtube.com/watch?v=VkzUJunpmgs","vid"],
+      ["Transformations of Exp & Log Functions Worksheet","https://www.jensenmath.ca/s/hw7s-63-transformations-of-expo-and-log.pdf","doc"],
+      ["Answers","https://www.jensenmath.ca/s/hw7t-63-transformations-of-expo-and-log.pdf","ans"],
+    ]},
     {d:3, iso:"2026-12-16", topic:"Exploring Graphs of Log Functions", num:"7.3", note:"", ans:"", extras:[
       ["Distance vs Loudness Data","https://docs.google.com/spreadsheets/d/1OgkZH9FMYJVyvrgC8vwtPE4-Mu4557iTJfTDcoIydb4/edit","doc"],
       ["Santa’s Chaotic Workshop Challenge",D("1jIIr6PjZ_w66MxFeNeXYxWYJC2coJdIc"),"doc"],
     ]},
-    {d:4, iso:"2026-12-17", topic:"Evaluating Logs", num:"7.4", note:"", ans:"", extras:[]},
+    {d:4, iso:"2026-12-17", topic:"Evaluating Logs", num:"7.4", note:"", ans:"", extras:[
+      ["Ms. Havrot: Evaluating Logarithms (8.3)","https://www.youtube.com/watch?v=QpM1d3eEwxk","vid"],
+      ["Change of Base Rule","https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:logs/x2ec2f6f830c9fb89:change-of-base/v/change-of-base-formula","vid"],
+    ]},
     {d:5, iso:"2026-12-18", topic:"Work Period", note:"", ans:"", extras:[
       ["Old Note: Log Rates of Change",D("1gnuqeN1WbbUjxIX9tLh_tb5tg3sXRIws"),"doc"],
       ["Answers",D("1h7v7Zj_wGTyAIri-PhlrY2ZEmlv88zrA"),"ans"],
     ]},
     {d:6, iso:"2027-01-04", topic:"Quiz", flag:"quiz",
       noteLabel:"Practice Quiz", ansLabel:"Answers",
-      note:D("1me7CDpronCGi2rnlo8wh3ijM0VjYx4bP"), ans:D("1mjcaS7vcFV4Uk1fcIiTWJyMlchjOP_wm"), extras:[]},
+      note:D("1me7CDpronCGi2rnlo8wh3ijM0VjYx4bP"), ans:D("1mjcaS7vcFV4Uk1fcIiTWJyMlchjOP_wm"), extras:[
+      ["Ms. Havrot: Chapter 8 Practice Test","https://www.youtube.com/watch?v=KiiSCpaPdj8","vid"],
+    ]},
     {d:7, iso:"2027-01-05", topic:"Laws of Logs", num:"7.5", note:"", ans:"", extras:[
       ["Logarithm Fundamentals","https://www.youtube.com/watch?v=cEvgcoyZvB4","vid"],
     ]},
-    {d:8, iso:"2027-01-06", topic:"Solving Exponential Equations", num:"7.6", note:"", ans:"", extras:[]},
+    {d:8, iso:"2027-01-06", topic:"Solving Exponential Equations", num:"7.6", note:"", ans:"", extras:[
+      ["Ms. Havrot: Solving Exponential Equations (8.5)","https://www.youtube.com/watch?v=jcuJ05GbtDM","vid"],
+      ["Solving Exponential Equations Worksheet","https://www.jensenmath.ca/s/hw4s-71-and-72-solving-exponential-equations.pdf","doc"],
+      ["Answers","https://www.jensenmath.ca/s/hw4t3-71-and-72-solving-exponential-equations.pdf","ans"],
+    ]},
     {d:9, iso:"2027-01-07", topic:"In-Class Activity", extras:[]},
     {d:10, iso:"2027-01-08", topic:"In-Class Activity", extras:[]},
-    {d:11, iso:"2027-01-11", topic:"Solving Logarithmic Equations", num:"7.7", note:"", ans:"", extras:[]},
+    {d:11, iso:"2027-01-11", topic:"Solving Logarithmic Equations", num:"7.7", note:"", ans:"", extras:[
+      ["Ms. Havrot: Solving Logarithmic Equations (8.6)","https://www.youtube.com/watch?v=vlDKADJsnXk","vid"],
+      ["Solving Logarithmic Equations Worksheet","https://www.jensenmath.ca/s/hw5s-74-solving-logarithmic-equations.pdf","doc"],
+      ["Answers","https://www.jensenmath.ca/s/hw5t-74-solving-logarithmic-equations.pdf","ans"],
+    ]},
     {d:12, iso:"2027-01-12", topic:"Solving Problems with Log & Exp Functions", num:"7.8", note:"", ans:"", extras:[
       ["Extra Word Problems",D("1gYzFpvAb-EpoETfuOBKKMdGAGuzYaWt9"),"doc"],
     ]},
