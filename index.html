@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MHF4U — Advanced Functions</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234a1a9e'/%3E%3Ctext x='32' y='46' font-size='40' font-family='Georgia,serif' font-style='italic' font-weight='bold' fill='white' text-anchor='middle'%3Eƒ%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2338127d'/%3E%3Ctext x='32' y='46' font-size='40' font-family='Georgia,serif' font-style='italic' font-weight='bold' fill='white' text-anchor='middle'%3Eƒ%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -12,32 +12,32 @@
 /* ═══════════ MHF4U — ADVANCED FUNCTIONS ═══════════ */
 
 :root{
-  --bg:#f6f4fa;--surface:#ffffff;--hover:#faf8fd;
-  --ink:#241b38;--t2:#544a6b;--t3:#8d82a6;--t4:#bcb3cf;
-  --bdr:#e6e1f0;--bdr2:#d3cbe4;
-  --accent:#4a1a9e;--accent-2:#6d38d8;
-  --accent-dim:rgba(74,26,158,.07);--accent-bdr:rgba(74,26,158,.28);
+  --bg:#f2eef9;--surface:#ffffff;--hover:#f7f4fb;
+  --ink:#150e26;--t2:#3f3557;--t3:#7d7194;--t4:#b1a7c4;
+  --bdr:#e0d9ee;--bdr2:#cbc0e0;
+  --accent:#38127d;--accent-2:#5a2bc0;
+  --accent-dim:rgba(56,18,125,.08);--accent-bdr:rgba(56,18,125,.3);
   --ans:#cc3344;--vid:#a8498f;--done:#1f8a63;
   --warn-bg:#fff0f2;--warn-fg:#b32642;--warn-bdr:rgba(204,51,68,.3);
-  --test-bg:rgba(176,72,84,.06);--quiz-bg:rgba(74,26,158,.05);--review-bg:rgba(20,128,94,.05);
-  --r:10px;--sh:0 1px 2px rgba(36,27,56,.05);--sh2:0 1px 3px rgba(36,27,56,.05),0 6px 20px rgba(36,27,56,.06);
-  --topbar:rgba(246,244,250,.9);
-  --curve:74,26,158;--curve-a:.09;
+  --test-bg:rgba(176,72,84,.06);--quiz-bg:rgba(56,18,125,.05);--review-bg:rgba(20,128,94,.05);
+  --r:10px;--sh:0 1px 2px rgba(21,14,38,.06);--sh2:0 1px 3px rgba(21,14,38,.06),0 6px 20px rgba(21,14,38,.07);
+  --topbar:rgba(242,238,249,.9);
+  --curve:56,18,125;--curve-a:.1;
   --sans:'Outfit',"Avenir Next","Segoe UI",system-ui,sans-serif;
   --mono:'IBM Plex Mono',"SF Mono",ui-monospace,Menlo,Consolas,monospace;
 }
 :root[data-theme="dark"]{
-  --bg:#161020;--surface:#1f172e;--hover:#271e3a;
-  --ink:#e4def0;--t2:#a89cc4;--t3:#6f6390;--t4:#453a5e;
-  --bdr:#2b2140;--bdr2:#3a2e54;
-  --accent:#8d63ea;--accent-2:#a685f8;
-  --accent-dim:rgba(141,99,234,.11);--accent-bdr:rgba(141,99,234,.32);
+  --bg:#0d0916;--surface:#150f24;--hover:#1c1430;
+  --ink:#ddd6ec;--t2:#9d90bc;--t3:#655a86;--t4:#3b3154;
+  --bdr:#221936;--bdr2:#30254c;
+  --accent:#7d51e6;--accent-2:#9a72f2;
+  --accent-dim:rgba(125,81,230,.12);--accent-bdr:rgba(125,81,230,.32);
   --ans:#ff8f9d;--vid:#d576c0;--done:#43c79f;
   --warn-bg:#351c26;--warn-fg:#ff9fae;--warn-bdr:rgba(255,143,157,.3);
-  --test-bg:rgba(224,122,140,.07);--quiz-bg:rgba(141,99,234,.06);--review-bg:rgba(67,199,159,.06);
-  --sh:0 1px 3px rgba(0,0,0,.25);--sh2:0 2px 8px rgba(0,0,0,.25),0 8px 24px rgba(0,0,0,.2);
-  --topbar:rgba(22,16,32,.92);
-  --curve:150,110,240;--curve-a:.13;
+  --test-bg:rgba(224,122,140,.07);--quiz-bg:rgba(125,81,230,.07);--review-bg:rgba(67,199,159,.06);
+  --sh:0 1px 3px rgba(0,0,0,.3);--sh2:0 2px 8px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25);
+  --topbar:rgba(13,9,22,.92);
+  --curve:132,92,235;--curve-a:.13;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -178,7 +178,7 @@ tr.flash{animation:rowflash 1.8s ease-out}
 
 .fab{position:fixed;bottom:1.5rem;right:1.5rem;z-index:200;background:var(--accent);color:#fff;border:none;border-radius:100px;
   padding:.55rem 1rem;font-family:var(--mono);font-size:.68rem;font-weight:600;cursor:pointer;
-  box-shadow:0 4px 20px rgba(74,26,158,.3);transition:transform .25s,box-shadow .25s;display:none;align-items:center;gap:.35rem}
+  box-shadow:0 4px 20px rgba(56,18,125,.35);transition:transform .25s,box-shadow .25s;display:none;align-items:center;gap:.35rem}
 .fab:hover{transform:translateY(-2px)}
 .fab.visible{display:flex}
 .fab:focus-visible{outline:2px solid var(--accent-2);outline-offset:2px}
