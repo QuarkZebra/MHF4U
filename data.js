@@ -24,7 +24,7 @@
 
    To SAVE TIME
 
-   git add . && git commit -m "day 1 extras" && git push origin main
+   git add . && git commit -m "calculators allowed on tests" && git push origin main
 
    ═══════════════════════════════════════════════════════════ */
 
@@ -43,7 +43,7 @@ const COURSE = {
     {d:1, iso:"2026-09-01", topic:"Review of Functions", num:"1.1",
       note:D("1Vvs50UzRnrbaqEv-CZfI-na-WLJXTFIi"), ans:"", extras:[
       ["Course Outline","https://docs.google.com/document/d/1TKs_nssQF9nXddPcy7fTJ68k6P8HA77nYvO-fjZeLsQ/edit","doc"],
-      ["Allowed Calculator List","https://drive.google.com/file/d/1H2bhoS3R22NF0dkTdfQlyuqASoc9nWtA/view","doc"],
+      ["Calculators Allowed on Tests","https://drive.google.com/file/d/1Hq2HE1EzSy2frKT0pfDUSWshgf0GB7A1/view?","doc"],
       ["LG/SC Review from 3U",D("1B4y9b2TMDEZYqG_tXoG2RCuPREQPI9ef"),"doc"],,
       ["Domain & Range Worksheet (answers included)",D("12D6Wf_aWjvp3TMwibvPRFKc4oUhs6nWw"),"doc"],
       ["Domain & Range of Graphs","https://www.youtube.com/watch?v=YjVc9ookvRs","vid"],
