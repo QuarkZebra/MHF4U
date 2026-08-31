@@ -21,6 +21,11 @@
 
    D(id) is shorthand for a Google Drive link — paste either a
    full URL or D("fileId"), both work.
+
+   To SAVE TIME
+
+   git add . && git commit -m "day 1 extras" && git push origin main
+   
    ═══════════════════════════════════════════════════════════ */
 
 const D = id => `https://drive.google.com/file/d/${id}/view`;
