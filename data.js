@@ -41,7 +41,7 @@ const COURSE = {
 
   {name:"Functions", days:[
     {d:1, iso:"2026-09-01", topic:"Review of Functions", num:"1.1",
-      note:D("1Vvs50UzRnrbaqEv-CZfI-na-WLJXTFIi"), ans:"", extras:[
+      note:D("1Vvs50UzRnrbaqEv-CZfI-na-WLJXTFIi"), ans:"https://drive.google.com/file/d/1ptPs7517HfxPLUSGRumwIvKYi1BivJMZ/view", extras:[
       ["Course Outline","https://docs.google.com/document/d/1TKs_nssQF9nXddPcy7fTJ68k6P8HA77nYvO-fjZeLsQ/edit","doc"],
       ["Calculators Allowed on Tests","https://drive.google.com/file/d/1Hq2HE1EzSy2frKT0pfDUSWshgf0GB7A1/view?","doc"],
       ["LG/SC Review from 3U",D("1B4y9b2TMDEZYqG_tXoG2RCuPREQPI9ef"),"doc"],,
