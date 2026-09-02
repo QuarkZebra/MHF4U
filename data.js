@@ -24,7 +24,7 @@
 
    To SAVE TIME:
 
-   git add . && git commit -m "1.1 answer key" && git push origin main
+   git add . && git commit -m "1.2 answer key" && git push origin main
 
    ═══════════════════════════════════════════════════════════ */
 
@@ -49,7 +49,7 @@ const COURSE = {
       ["Domain & Range of Graphs","https://www.youtube.com/watch?v=YjVc9ookvRs","vid"],
     ]},
     {d:2, iso:"2026-09-02", topic:"Math Overview & Inverses", num:"1.2",
-      note:D("1M_He13KlMBo3XHOrUSBJjP7ewNLlY8IH"), ans:"" /* key: D("1dLF9g2m9_GDRs3oJh6VSP0mPNrVgq6gI") */, extras:[
+      note:D("1M_He13KlMBo3XHOrUSBJjP7ewNLlY8IH"), ans:D("1dLF9g2m9_GDRs3oJh6VSP0mPNrVgq6gI") /* key: D("1dLF9g2m9_GDRs3oJh6VSP0mPNrVgq6gI") */, extras:[
       ["Common Math Symbols",D("14gKLpT3TMJgeAkocJ7890DwQfmMMZb0h"),"doc"],
       ["Math Review / Overview",D("1Yem58YTDsBHEvbqA1RHn0XVhFuMxhxU5"),"doc"],
       ["Answers",D("1-Y8SYfMiWKaX3J9d19JCi2G68VRsv6sd"),"ans"],
