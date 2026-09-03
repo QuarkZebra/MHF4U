@@ -61,7 +61,7 @@ const COURSE = {
     /* Day 3's old domain & range extras moved to Day 1 (domain/range) and Day 8
        (interval notation); these replacements match 1.3's actual topics. */
     {d:3, iso:"2026-09-03", topic:"Mathematical Patterns", num:"1.3",
-      note:D("11neyNblyF6QVFaS8IbXfjWW4uGe4ubQ0"), ans:"" /* key: D("1lwdvPpyHu79iKHUpCF77L7pW63fhwiLc") */, extras:[
+      note:D("11neyNblyF6QVFaS8IbXfjWW4uGe4ubQ0"), ans:D("1lwdvPpyHu79iKHUpCF77L7pW63fhwiLc") /* key: D("1lwdvPpyHu79iKHUpCF77L7pW63fhwiLc") */, extras:[
       ["First & Second Differences","https://www.youtube.com/watch?v=tBdA6ltSi1w","vid"],
       ["Ms. Havrot: Arithmetic Sequences (7.1)","https://www.youtube.com/watch?v=Kywsd6LKXKg","vid"],
       ["Ms. Havrot: Geometric Sequences (7.2)","https://www.youtube.com/watch?v=jtVesKxLyIA","vid"],
