@@ -71,7 +71,7 @@ const COURSE = {
       ["Answers","https://www.jensenmath.ca/s/Sequences-worksheet-1-SOLUTIONS.pdf","ans"],
     ]},
     {d:4, iso:"2026-09-04", topic:"Absolute Value", num:"1.4",
-      note:D("1ucaobGi7vXcFNTL3N1rv3Sdw_IJFbIdy"), ans:"" /* key: D("1Gzerqdsrn7SnOcKaYVL5-ZBP6M1ye90x") */, extras:[
+      note:D("1ucaobGi7vXcFNTL3N1rv3Sdw_IJFbIdy"), ans:D("1Gzerqdsrn7SnOcKaYVL5-ZBP6M1ye90x") /* key: D("1Gzerqdsrn7SnOcKaYVL5-ZBP6M1ye90x") */, extras:[
       ["Absolute Value Inequalities","https://www.youtube.com/watch?v=iI_2Piwn_og","vid"],
     ]},
     {d:5, iso:"2026-09-08", topic:"Radians", num:"1.5",
