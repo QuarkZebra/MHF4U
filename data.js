@@ -75,7 +75,7 @@ const COURSE = {
       ["Absolute Value Inequalities","https://www.youtube.com/watch?v=iI_2Piwn_og","vid"],
     ]},
     {d:5, iso:"2026-09-08", topic:"Radians", num:"1.5",
-      note:D("1zJIxYcSHUWktPCVmSHH20MHFgXw1oEBB"), ans:"" /* key: D("1_MiCziw0ZElUDDeDbIuhK70hC45HK5jb") */, extras:[
+      note:D("1zJIxYcSHUWktPCVmSHH20MHFgXw1oEBB"), ans:D("1_MiCziw0ZElUDDeDbIuhK70hC45HK5jb") /* key: D("1_MiCziw0ZElUDDeDbIuhK70hC45HK5jb") */, extras:[
       ["Radians Worksheet","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed50f5f0818b1a92890325/1642942709577/hw1s++4.1+Radian+Measure.pdf","doc"],
       ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed50fa557fe87e37110761/1642942714576/hw1t++4.1+Radian+Measure.pdf","ans"],
       ["In-Class Note: Speed vs Angular Speed",D("1JH_B_ekPRnYrK9rNLOapbvjcFWkerC3T"),"doc"],
