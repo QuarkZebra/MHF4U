@@ -81,7 +81,7 @@ const COURSE = {
       ["In-Class Note: Speed vs Angular Speed",D("1JH_B_ekPRnYrK9rNLOapbvjcFWkerC3T"),"doc"],
     ]},
     {d:6, iso:"2026-09-09", topic:"Trig: Inverse vs Reciprocal", num:"1.6",
-      note:D("1bfcQnBvBYRWCGHbuYNi-H1n5_N8_f0m8"), ans:"" /* key: D("12KHLbTF_mFSP-WrfAzL3mkN-VpPlwM0K") */, extras:[
+      note:D("1bfcQnBvBYRWCGHbuYNi-H1n5_N8_f0m8"), ans:D("12KHLbTF_mFSP-WrfAzL3mkN-VpPlwM0K") /* key: D("12KHLbTF_mFSP-WrfAzL3mkN-VpPlwM0K") */, extras:[
       ["More Trigonometry Practice",D("1eDk4okSLmzeoMjnnK6yN0d1Ox9MnDhtX"),"doc"],
       ["Answers",D("1OEWpsnL7f8NhkCcKfb6NI6Z5HZglpEJN"),"ans"],
       ["Exact Special Triangles Practice",D("1Pwyg2hp217LGKfr8QH9AUmU2CtakHOqR"),"doc"],
