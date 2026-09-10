@@ -88,7 +88,7 @@ const COURSE = {
       ["Answers",D("1QAta6TpNRw6CE_VCZWTIcZ0m2z8Vb0hA"),"ans"],
     ]},
     {d:7, iso:"2026-09-10", topic:"Transformations", num:"1.7",
-      note:D("1ctOnyL7wVbhiDH4lqTX8ihgi7k10wwk4"), ans:"" /* key: D("19pvRgI658kD3GVlxWkLCvdf_wvX8tfW_") */, extras:[
+      note:D("1ctOnyL7wVbhiDH4lqTX8ihgi7k10wwk4"), ans:D("19pvRgI658kD3GVlxWkLCvdf_wvX8tfW_") /* key: D("19pvRgI658kD3GVlxWkLCvdf_wvX8tfW_") */, extras:[
       ["I/O Diagrams & Function Notation",D("13cWi_5WSXjQWA0TnT_i9qMA40U5nXhgC"),"doc"],
       ["Answers",D("13e34ICvMaArFfvaRYvzmr_DXwjkFHG6P"),"ans"],
       ["I/O Diagrams with Quadratics",D("13_rwK9BRjyIrzV8DOCfrbeD0dA5Oohx1"),"doc"],
