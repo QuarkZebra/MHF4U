@@ -100,7 +100,7 @@ const COURSE = {
       ["Answers (with I/O)",D("1Jjop5z_MzxaVEGSWv522zKxDaZrAdPcS"),"ans"],
     ]},
     {d:8, iso:"2026-09-11", topic:"Properties of Functions", num:"1.8",
-      note:D("1f9nOS3VBuASa3pn5vots9ePfTcbdYSjK"), ans:"" /* key: D("1NGfYn21HEDCt0pXrB0NbNy1g06hle6ce") */, extras:[
+      note:D("1f9nOS3VBuASa3pn5vots9ePfTcbdYSjK"), ans:D("1NGfYn21HEDCt0pXrB0NbNy1g06hle6ce") /* key: D("1NGfYn21HEDCt0pXrB0NbNy1g06hle6ce") */, extras:[
       ["Properties of Functions Review",D("11ljLhzas7erncDuHmSnDFaCkPd6FQw6q"),"doc"],
       ["Answers",D("11sqQDo5wI-GfV2fxV18NWRLcMQZTW5hq"),"ans"],
       ["Properties Challenge",D("1RKGC6FyeFK36B8_r4CT47w4SNhG6JvK9"),"doc"],
