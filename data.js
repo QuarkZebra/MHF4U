@@ -274,6 +274,7 @@ const COURSE = {
   /* ── UNIT 4 ─────────────────────────────────────────────── */
   {name:"Rational Functions", days:[
     {d:1, iso:"2026-10-29", topic:"Graphs of Reciprocal Functions", num:"4.1", note:D("1v3uYh0ks822Fcu2m5xjxZAGVLksTXGb4"), ans:"" /* key: D("1UBof53_Zraqx8MZKqdxZmfIOsQ8ukrSo") */, extras:[
+      ["Unit 4 Prerequisite Skills (answers included)",D("1mPrTfSQfNBvrqUkivHVRDuA0uBjmgRGm"),"skills"],
       ["Ms. Havrot’s Videos: Rational Functions","https://www.youtube.com/watch?v=QT2hD5EnHAs&list=PLGinkJ_ZMO2FE8EzZwCSUIPxOmMxmrzVv","vid"],
       ["Jensen: Reciprocal Functions","https://www.youtube.com/watch?v=CoqCJQMt8JU","vid"],
       ["Practice Problems","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed62523ad0a2796cf8ce9a/1642947155249/hw1t+3.1+reciprocal+of+linear+and+quadratic.pdf","doc"],
