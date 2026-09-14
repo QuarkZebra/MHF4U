@@ -44,6 +44,8 @@ const COURSE = {
       note:D("1Vvs50UzRnrbaqEv-CZfI-na-WLJXTFIi"), ans:"https://drive.google.com/file/d/1ptPs7517HfxPLUSGRumwIvKYi1BivJMZ/view", extras:[
       ["Course Outline","https://docs.google.com/document/d/1TKs_nssQF9nXddPcy7fTJ68k6P8HA77nYvO-fjZeLsQ/edit","doc"],
       ["Calculators Allowed on Tests","https://drive.google.com/file/d/1Hq2HE1EzSy2frKT0pfDUSWshgf0GB7A1/view?","doc"],
+      ["How to Do the Homework",D("1R3mK-JRVtPDLDvwr1tdUFqEQTB5FOn-l"),"doc"],
+      ["Unit 1 Prerequisite Skills (answers included)",D("1BLqvIx4vk7_WPuIeWRkOX_5tSTBoI7Ul"),"doc"],
       ["LG/SC Review from 3U",D("1B4y9b2TMDEZYqG_tXoG2RCuPREQPI9ef"),"doc"],,
       ["Domain & Range Worksheet (answers included)",D("12D6Wf_aWjvp3TMwibvPRFKc4oUhs6nWw"),"doc"],
       ["Domain & Range of Graphs","https://www.youtube.com/watch?v=YjVc9ookvRs","vid"],
@@ -114,6 +116,8 @@ const COURSE = {
     {d:10, iso:"2026-09-15", topic:"Practice Quiz · Work Period", flag:"quiz",
       noteLabel:"Practice Quiz", ansLabel:"Answers",
       note:D("1Mf1bTmMkrUsr7jJ5ihlRm49vRLzKJQbU"), ans:"" /* key: D("18E-MoFd0wSZVQZSb5EVdzyxl78FES7gz") */, extras:[
+      ["How to Do the Homework",D("1R3mK-JRVtPDLDvwr1tdUFqEQTB5FOn-l"),"doc"],
+      ["Unit 1 Prerequisite Skills (answers included)",D("1BLqvIx4vk7_WPuIeWRkOX_5tSTBoI7Ul"),"doc"],
       ["Function Notation Example","https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/8th-functions-and-function-notation/v/understanding-function-notation-example-3","vid"],
     ]},
     {d:11, iso:"2026-09-16", topic:"Operations with Functions", num:"1.10",
