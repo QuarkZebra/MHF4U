@@ -223,6 +223,7 @@ const COURSE = {
   /* ── UNIT 3 ─────────────────────────────────────────────── */
   {name:"Polynomial Equations & Inequalities", days:[
     {d:1, iso:"2026-10-14", topic:"Solving Polynomial Equations", num:"3.1", note:D("1WylEmcyNZdwCwdfGNMJFou7nwEN1Vpj5"), ans:"" /* key: D("1vgGk1yv2gJbw6J0kwYW8bT-Ed7ObhWcZ") */, extras:[
+      ["Unit 3 Prerequisite Skills (answers included)",D("1lmPE_m23qefjD5f_BJW6c9ilr4Eoio2W"),"skills"],
       ["Jensen: Solving Polynomial Equations","https://www.youtube.com/watch?v=3DXn0v55KSY","vid"],
       ["Practice Solving Polynomials","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ec0c6ea7b6b91ae7b8dfa0/1642859631045/2.3+hws+solve+polynomial+equations.pdf","doc"],
       ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ec0c748922b857abf38641/1642859636816/2.3+hwt+solve+polynomial+equations.pdf","ans"],
