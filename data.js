@@ -17,7 +17,9 @@
            use noteLabel/ansLabel for custom link names.
    - extras: [ ["Title","https://…","kind"], … ]
            kind = "doc" (worksheet/handout), "ans" (solutions,
-           shows the ☠︎ warning), "vid" (video).
+           shows the ☠︎ warning), "vid" (video), "skills" (a
+           Prerequisite Skills sheet: teal, answers on the sheet).
+   - essentials (top of COURSE): the links pinned under the title.
 
    D(id) is shorthand for a Google Drive link — paste either a
    full URL or D("fileId"), both work.
@@ -34,6 +36,16 @@ const COURSE = {
   code: "MHF4U",
   title: "Advanced Functions",
   sub: "Grade 12 · University Preparation",
+
+  /* Pinned under the title, above the units: [label, url, kind, warn].
+     kind = "outline" | "routine" | "calc". A warn string shows as a hazard
+     note on hover (desktop) or first tap (phone). */
+  essentials: [
+    ["Course Outline",D("1FTz2dLPh928X3C1hjVIBIUmZ6LAMhRLx"),"outline"],   /* LaTeX rebuild, 14 Sep 2026; old Google Doc: 1TKs_nssQF9nXddPcy7fTJ68k6P8HA77nYvO-fjZeLsQ */
+    ["A Homework Routine",D("1R3mK-JRVtPDLDvwr1tdUFqEQTB5FOn-l"),"routine"],
+    ["Approved Calculators",D("1Hq2HE1EzSy2frKT0pfDUSWshgf0GB7A1"),"calc","Must be one of these exact models"],
+  ],
+
   units: [
 
   /* ── UNIT 1 ─────────────────────────────────────────────── */
@@ -42,10 +54,7 @@ const COURSE = {
   {name:"Functions", days:[
     {d:1, iso:"2026-09-01", topic:"Review of Functions", num:"1.1",
       note:D("1Vvs50UzRnrbaqEv-CZfI-na-WLJXTFIi"), ans:"https://drive.google.com/file/d/1ptPs7517HfxPLUSGRumwIvKYi1BivJMZ/view", extras:[
-      ["Course Outline","https://docs.google.com/document/d/1TKs_nssQF9nXddPcy7fTJ68k6P8HA77nYvO-fjZeLsQ/edit","doc"],
-      ["Calculators Allowed on Tests","https://drive.google.com/file/d/1Hq2HE1EzSy2frKT0pfDUSWshgf0GB7A1/view?","doc"],
-      ["How to Do the Homework",D("1R3mK-JRVtPDLDvwr1tdUFqEQTB5FOn-l"),"doc"],
-      ["Unit 1 Prerequisite Skills (answers included)",D("1BLqvIx4vk7_WPuIeWRkOX_5tSTBoI7Ul"),"doc"],
+      ["Unit 1 Prerequisite Skills (answers included)",D("1BLqvIx4vk7_WPuIeWRkOX_5tSTBoI7Ul"),"skills"],
       ["LG/SC Review from 3U",D("1B4y9b2TMDEZYqG_tXoG2RCuPREQPI9ef"),"doc"],,
       ["Domain & Range Worksheet (answers included)",D("12D6Wf_aWjvp3TMwibvPRFKc4oUhs6nWw"),"doc"],
       ["Domain & Range of Graphs","https://www.youtube.com/watch?v=YjVc9ookvRs","vid"],
@@ -116,8 +125,7 @@ const COURSE = {
     {d:10, iso:"2026-09-15", topic:"Practice Quiz · Work Period", flag:"quiz",
       noteLabel:"Practice Quiz", ansLabel:"Answers",
       note:D("1Mf1bTmMkrUsr7jJ5ihlRm49vRLzKJQbU"), ans:"" /* key: D("18E-MoFd0wSZVQZSb5EVdzyxl78FES7gz") */, extras:[
-      ["How to Do the Homework",D("1R3mK-JRVtPDLDvwr1tdUFqEQTB5FOn-l"),"doc"],
-      ["Unit 1 Prerequisite Skills (answers included)",D("1BLqvIx4vk7_WPuIeWRkOX_5tSTBoI7Ul"),"doc"],
+      ["Unit 1 Prerequisite Skills (answers included)",D("1BLqvIx4vk7_WPuIeWRkOX_5tSTBoI7Ul"),"skills"],
       ["Function Notation Example","https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/8th-functions-and-function-notation/v/understanding-function-notation-example-3","vid"],
     ]},
     {d:11, iso:"2026-09-16", topic:"Operations with Functions", num:"1.10",
@@ -162,7 +170,7 @@ const COURSE = {
   /* ── UNIT 2 ─────────────────────────────────────────────── */
   {name:"Polynomial Functions", days:[
     {d:1, iso:"2026-09-25", topic:"Exploring Polynomial Functions", num:"2.1", note:D("1eQI72t7i4BGonpyAq_4t6ASWDYZecylY"), ans:"" /* key: D("1JtcxaqEl1qjQZeezef2-VuqKMaPv1TOI") */, extras:[
-      ["Unit 2 Prerequisite Skills (answers included)",D("1orQn_aFA4AtxU1NJP4IrlPThWv9ltbC9"),"doc"],
+      ["Unit 2 Prerequisite Skills (answers included)",D("1orQn_aFA4AtxU1NJP4IrlPThWv9ltbC9"),"skills"],
       ["Factoring Note with Examples",D("172JVWB48hnwCbyJOf_6hQOqP-nvId9nz"),"doc"],
       ["Factoring Worksheet",D("16wBxYMkSBnxSJ7isUZbQuxvfOxisBUyy"),"doc"],
       ["Factoring: Greatest Common Factor (Khan)","https://www.khanacademy.org/gclassroom/math/algebra2/x2ec2f6f830c9fb89:poly-factor/x2ec2f6f830c9fb89:common-factor/a/taking-common-factors","vid"],
