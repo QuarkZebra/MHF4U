@@ -115,8 +115,6 @@ header .sub{color:var(--t3);font-size:.88rem;margin-top:.35rem}
 .ess a:hover{transform:translateY(-1px);border-color:var(--accent-bdr);color:var(--accent);box-shadow:var(--sh2)}
 .ess a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .ess .ico{width:1.05em;height:1.05em}
-.ess .ico.haz{color:var(--haz-fg);margin-left:.05rem}
-.ess a:hover .ico.haz{transform:scale(1.15)}
 
 .sbar{display:flex;align-items:center;gap:.6rem;margin-bottom:1.2rem;padding:.55rem .9rem;background:var(--surface);
   border:1px solid var(--bdr);border-radius:var(--r);box-shadow:var(--sh);transition:border-color .2s,box-shadow .2s}
@@ -518,9 +516,10 @@ function toggleU(btn){
 
 /* ══════════ Course essentials ══════════
    COURSE.essentials = [[label, url, kind, warn?], ...]; kind is "outline",
-   "routine" or "calc". A warn string rides on the link as a hazard tip: hover
-   on desktop, and on a phone the first tap raises it as a sheet with Continue
-   (the same data-warn mechanism the answer keys use). */
+   "routine" or "calc". A warn string rides on the link as a hazard tip (the
+   pill itself stays plain): hover on desktop, and on a phone the first tap
+   raises it as a sheet with Continue (the same data-warn mechanism the answer
+   keys use). */
 function renderEssentials(){
   const el=document.getElementById("ess");
   const list=(COURSE.essentials||[]).filter(Boolean);
@@ -528,7 +527,7 @@ function renderEssentials(){
   const ICO={outline:"doc",routine:"list",calc:"calc"};
   el.innerHTML=list.map(e=>{
     const[t,url,kind,warn]=e;
-    const a=`<a href="${esc(url)}" target="_blank" rel="noopener"${warn?' data-warn':''}>${ico(ICO[kind]||"arrow")}<span>${t}</span>${warn?ico("haz","haz"):""}</a>`;
+    const a=`<a href="${esc(url)}" target="_blank" rel="noopener"${warn?' data-warn':''}>${ico(ICO[kind]||"arrow")}<span>${t}</span></a>`;
     return warn?`<span class="tipwrap">${a}<span class="tip hazard">${ico("haz","haz")}<span>${esc(warn)}</span><button class="tgo" type="button">Continue</button></span></span>`:a;
   }).join("");
 }
