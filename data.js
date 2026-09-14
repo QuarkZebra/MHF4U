@@ -359,6 +359,7 @@ const COURSE = {
   /* ── UNIT 6 ─────────────────────────────────────────────── */
   {name:"Trig Identities & Equations", days:[
     {d:1, iso:"2026-11-26", topic:"Trig & Equivalent Functions Review", num:"6.1", note:D("1A3toLNq8yTAbDxIRizPybUdOi1zkMq8r"), ans:"" /* key: D("1Yc0VQhaeeN4uF1NpOBTWt-CQES-oa5Jo") */, extras:[
+      ["Unit 6 Prerequisite Skills (answers included)",D("1Ztq316NIicDiPzGp2p03rFjhGjwH4BlG"),"skills"],
       ["Review: Trig Identities",D("1YI0Zr7DZkqQc6hdEzJChXoMJbCP0Mo1w"),"doc"],
       ["Answers",D("1-bzNcIKgWX7rfzqmbfDr2CpYS7zi0NNr"),"ans"],
       ["Solving Trig Identities","https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:trig/x9e81a4f98389efdf:using-trig-id/v/examples-using-pythagorean-identities-to-simplify-trigonometric-expressions","vid"],
@@ -411,6 +412,7 @@ const COURSE = {
   /* ── UNIT 7 ─────────────────────────────────────────────── */
   {name:"Exponentials & Logarithms", days:[
     {d:1, iso:"2026-12-14", topic:"Log Review", num:"7.1", note:D("17g_TdvGCblRGAC7l1xb63KZUgtPXaXLn"), ans:"" /* key: D("1ZQL_FSBBJsillhQZUvsbEYzPEijx1Exb") */, extras:[
+      ["Unit 7 Prerequisite Skills (answers included)",D("14b4QE3lHaR-0bmitGCG-SJa_WcPIS4OK"),"skills"],
       ["Short-cut to Solve ANY Problem","https://www.youtube.com/watch?v=dQw4w9WgXcQ","vid"],
       ["Ms. Havrot’s Videos: Exponentials & Logs","https://www.youtube.com/watch?v=w-2ku9QNYlA&list=PLGinkJ_ZMO2HQwGf8mAmHGPQTJr1_faeF","vid"],
     ]},
