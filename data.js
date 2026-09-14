@@ -162,6 +162,7 @@ const COURSE = {
   /* ── UNIT 2 ─────────────────────────────────────────────── */
   {name:"Polynomial Functions", days:[
     {d:1, iso:"2026-09-25", topic:"Exploring Polynomial Functions", num:"2.1", note:D("1eQI72t7i4BGonpyAq_4t6ASWDYZecylY"), ans:"" /* key: D("1JtcxaqEl1qjQZeezef2-VuqKMaPv1TOI") */, extras:[
+      ["Unit 2 Prerequisite Skills (answers included)",D("1orQn_aFA4AtxU1NJP4IrlPThWv9ltbC9"),"doc"],
       ["Factoring Note with Examples",D("172JVWB48hnwCbyJOf_6hQOqP-nvId9nz"),"doc"],
       ["Factoring Worksheet",D("16wBxYMkSBnxSJ7isUZbQuxvfOxisBUyy"),"doc"],
       ["Factoring: Greatest Common Factor (Khan)","https://www.khanacademy.org/gclassroom/math/algebra2/x2ec2f6f830c9fb89:poly-factor/x2ec2f6f830c9fb89:common-factor/a/taking-common-factors","vid"],
