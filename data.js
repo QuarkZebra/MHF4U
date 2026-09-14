@@ -87,12 +87,17 @@ const COURSE = {
     ]},
     {d:5, iso:"2026-09-08", topic:"Radians", num:"1.5",
       note:D("1zJIxYcSHUWktPCVmSHH20MHFgXw1oEBB"), ans:D("1_MiCziw0ZElUDDeDbIuhK70hC45HK5jb") /* key: D("1_MiCziw0ZElUDDeDbIuhK70hC45HK5jb") */, extras:[
+          ["Trig Review (answers included)",D("1kI_KrlBeX0kVQeoBbJS1DYqIOaLfdLLm"),"skills"],
+          ["JensenMath: Trigonometry in Radians (full lesson)","https://www.youtube.com/watch?v=fDi3KIPTSIc","vid"],
+          ["Eddie Woo: Introduction to Radians (1 of 3)","https://www.youtube.com/watch?v=5a15xwS7rW8","vid"],
       ["Radians Worksheet","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed50f5f0818b1a92890325/1642942709577/hw1s++4.1+Radian+Measure.pdf","doc"],
       ["Answers","https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61ed50fa557fe87e37110761/1642942714576/hw1t++4.1+Radian+Measure.pdf","ans"],
       ["In-Class Note: Speed vs Angular Speed",D("1JH_B_ekPRnYrK9rNLOapbvjcFWkerC3T"),"doc"],
     ]},
     {d:6, iso:"2026-09-09", topic:"Trig: Inverse vs Reciprocal", num:"1.6",
       note:D("1bfcQnBvBYRWCGHbuYNi-H1n5_N8_f0m8"), ans:D("12KHLbTF_mFSP-WrfAzL3mkN-VpPlwM0K") /* key: D("12KHLbTF_mFSP-WrfAzL3mkN-VpPlwM0K") */, extras:[
+          ["JensenMath: Reciprocal Trig Ratios (full lesson)","https://www.youtube.com/watch?v=wfj81FhUdtI","vid"],
+          ["Conceptual Calculus: Inverse vs. Reciprocal Notation","https://www.youtube.com/watch?v=4btP132mNmQ","vid"],
       ["More Trigonometry Practice",D("1eDk4okSLmzeoMjnnK6yN0d1Ox9MnDhtX"),"doc"],
       ["Answers",D("1OEWpsnL7f8NhkCcKfb6NI6Z5HZglpEJN"),"ans"],
       ["Exact Special Triangles Practice",D("1Pwyg2hp217LGKfr8QH9AUmU2CtakHOqR"),"doc"],
