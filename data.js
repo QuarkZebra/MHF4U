@@ -26,7 +26,7 @@
 
    To SAVE TIME:
 
-   git add . && git commit -m "swap quiz and piecewise" && git push origin main
+   git add . && git commit -m "d10 practice quiz key" && git push origin main
 
    ═══════════════════════════════════════════════════════════ */
 
@@ -126,7 +126,7 @@ const COURSE = {
     {d:9, iso:"2026-09-14", topic:"Properties of Functions, Continued", note:"", ans:"", extras:[]},
     {d:10, iso:"2026-09-15", topic:"Practice Quiz · Work Period", flag:"quiz",
       noteLabel:"Practice Quiz", ansLabel:"Answers",
-      note:D("1Mf1bTmMkrUsr7jJ5ihlRm49vRLzKJQbU"), ans:"" /* key: D("18E-MoFd0wSZVQZSb5EVdzyxl78FES7gz") */, extras:[
+      note:D("1Mf1bTmMkrUsr7jJ5ihlRm49vRLzKJQbU"), ans:D("18E-MoFd0wSZVQZSb5EVdzyxl78FES7gz") /* key: D("18E-MoFd0wSZVQZSb5EVdzyxl78FES7gz") */, extras:[
       ["Unit 1 Prerequisite Skills (answers included)",D("1BLqvIx4vk7_WPuIeWRkOX_5tSTBoI7Ul"),"skills"],
       ["Function Notation Example","https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/8th-functions-and-function-notation/v/understanding-function-notation-example-3","vid"],
     ]},
