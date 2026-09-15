@@ -26,7 +26,7 @@
 
    To SAVE TIME:
 
-   git add . && git commit -m "1.2 answer key" && git push origin main
+   git add . && git commit -m "swap quiz and piecewise" && git push origin main
 
    ═══════════════════════════════════════════════════════════ */
 
@@ -124,15 +124,15 @@ const COURSE = {
       ["Interval Notation","https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:introduction-to-the-domain-and-range-of-a-function/v/introduction-to-interval-notation","vid"],
     ]},
     {d:9, iso:"2026-09-14", topic:"Properties of Functions, Continued", note:"", ans:"", extras:[]},
-    {d:10, iso:"2026-09-15", topic:"Piecewise Functions", num:"1.9",
-      note:D("12g_NmoSCNAQWwjbhInkHRHrPAJvZ5UR8"), ans:"" /* key: D("1ok89PfstZ8S8ZAvO_QncVL2eASVeGYpA") */, extras:[
-      ["Function Notation Extra Practice","https://docs.google.com/document/d/1n1wRsbtm4vZTYPBxOE6kh2rNKuBrAaVzsSf-B-oz2oo/edit","doc"],
-    ]},
-    {d:11, iso:"2026-09-16", topic:"Practice Quiz · Work Period", flag:"quiz",
+    {d:10, iso:"2026-09-15", topic:"Practice Quiz · Work Period", flag:"quiz",
       noteLabel:"Practice Quiz", ansLabel:"Answers",
       note:D("1Mf1bTmMkrUsr7jJ5ihlRm49vRLzKJQbU"), ans:"" /* key: D("18E-MoFd0wSZVQZSb5EVdzyxl78FES7gz") */, extras:[
       ["Unit 1 Prerequisite Skills (answers included)",D("1BLqvIx4vk7_WPuIeWRkOX_5tSTBoI7Ul"),"skills"],
       ["Function Notation Example","https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/8th-functions-and-function-notation/v/understanding-function-notation-example-3","vid"],
+    ]},
+    {d:11, iso:"2026-09-16", topic:"Piecewise Functions", num:"1.9",
+      note:D("12g_NmoSCNAQWwjbhInkHRHrPAJvZ5UR8"), ans:"" /* key: D("1ok89PfstZ8S8ZAvO_QncVL2eASVeGYpA") */, extras:[
+      ["Function Notation Extra Practice","https://docs.google.com/document/d/1n1wRsbtm4vZTYPBxOE6kh2rNKuBrAaVzsSf-B-oz2oo/edit","doc"],
     ]},
     {d:12, iso:"2026-09-17", topic:"Operations with Functions", num:"1.10",
       note:D("17hI0NwthW_vt91YgnpyW-06xle90PAMg"), ans:"" /* key: D("1gfBo_VjRKTmGgeuoVmbEAr23yV-4RQhm") */, extras:[
