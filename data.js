@@ -26,7 +26,7 @@
 
    To SAVE TIME:
 
-   git add . && git commit -m "d10 practice quiz key" && git push origin main
+   git add . && git commit -m "d11 key" && git push origin main
 
    ═══════════════════════════════════════════════════════════ */
 
@@ -131,7 +131,7 @@ const COURSE = {
       ["Function Notation Example","https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/8th-functions-and-function-notation/v/understanding-function-notation-example-3","vid"],
     ]},
     {d:11, iso:"2026-09-16", topic:"Piecewise Functions", num:"1.9",
-      note:D("12g_NmoSCNAQWwjbhInkHRHrPAJvZ5UR8"), ans:"" /* key: D("1ok89PfstZ8S8ZAvO_QncVL2eASVeGYpA") */, extras:[
+      note:D("12g_NmoSCNAQWwjbhInkHRHrPAJvZ5UR8"), ans:D("1ok89PfstZ8S8ZAvO_QncVL2eASVeGYpA") /* key: D("1ok89PfstZ8S8ZAvO_QncVL2eASVeGYpA") */, extras:[
       ["Function Notation Extra Practice","https://docs.google.com/document/d/1n1wRsbtm4vZTYPBxOE6kh2rNKuBrAaVzsSf-B-oz2oo/edit","doc"],
     ]},
     {d:12, iso:"2026-09-17", topic:"Operations with Functions", num:"1.10",
