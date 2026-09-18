@@ -26,7 +26,7 @@
 
    To SAVE TIME:
 
-   git add . && git commit -m "d11 key" && git push origin main
+   git add . && git commit -m "d12 and 13 keys" && git push origin main
 
    ═══════════════════════════════════════════════════════════ */
 
@@ -135,12 +135,12 @@ const COURSE = {
       ["Function Notation Extra Practice","https://docs.google.com/document/d/1n1wRsbtm4vZTYPBxOE6kh2rNKuBrAaVzsSf-B-oz2oo/edit","doc"],
     ]},
     {d:12, iso:"2026-09-17", topic:"Operations with Functions", num:"1.10",
-      note:D("17hI0NwthW_vt91YgnpyW-06xle90PAMg"), ans:"" /* key: D("1gfBo_VjRKTmGgeuoVmbEAr23yV-4RQhm") */, extras:[
+      note:D("17hI0NwthW_vt91YgnpyW-06xle90PAMg"), ans:D("1gfBo_VjRKTmGgeuoVmbEAr23yV-4RQhm") /* key: D("1gfBo_VjRKTmGgeuoVmbEAr23yV-4RQhm") */, extras:[
       ["Ms. Havrot: Sums & Differences of Functions (9.2)","https://www.youtube.com/watch?v=nBAffHJK2oA","vid"],
       ["Ms. Havrot: Products of Functions (9.3)","https://www.youtube.com/watch?v=Y-JY4aHhJwI","vid"],
     ]},
     {d:13, iso:"2026-09-18", topic:"Composite Functions", num:"1.11",
-      note:D("1xQ_qVFNHI7Eud09kgMYNCEYhEO109qFR"), ans:"" /* key: D("1Nw1YIzbD4k3vkAxB9uOvOLmT8nRZJgMx") */, extras:[
+      note:D("1xQ_qVFNHI7Eud09kgMYNCEYhEO109qFR"), ans:D("1Nw1YIzbD4k3vkAxB9uOvOLmT8nRZJgMx") /* key: D("1Nw1YIzbD4k3vkAxB9uOvOLmT8nRZJgMx") */, extras:[
       ["Composite Functions Examples","https://www.youtube.com/watch?v=ZFPkQkURSxk","vid"],
       ["Ms. Havrot: Composition of Functions (9.5)","https://www.youtube.com/watch?v=9mG6iWo8TJA","vid"],
     ]},
