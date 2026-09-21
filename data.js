@@ -26,7 +26,7 @@
 
    To SAVE TIME:
 
-   git add . && git commit -m "textbook solutions day 1" && git push origin main
+   git add . && git commit -m "textbook solutions day 1 again" && git push origin main
 
    ═══════════════════════════════════════════════════════════ */
 
@@ -57,7 +57,7 @@ const COURSE = {
       ["Unit 1 Prerequisite Skills (answers included)",D("1BLqvIx4vk7_WPuIeWRkOX_5tSTBoI7Ul"),"skills"],
       ["Textbook","https://drive.google.com/file/d/1PL1poX-gGXle8lF6WQp6sckQJbnAVbBZ/view?usp=drive_link","doc"],
       ["Textbook Corrections","https://drive.google.com/file/d/104AH3b9ihj_jlsRTZwswXUSc9O5Ufywm/view?usp=drive_link","ans"],
-      ["Textbook (separate files for each chapter","https://drive.google.com/drive/folders/1iKDpCSdqUBvsYqEQ8D0wPoLW2ZyOfTHw?usp=drive_link","doc"],
+      ["Textbook (separate files for each chapter)","https://drive.google.com/drive/folders/1iKDpCSdqUBvsYqEQ8D0wPoLW2ZyOfTHw?usp=drive_link","doc"],
       ["Textbook Solutions","https://drive.google.com/drive/folders/1Khpcx1R0LTrgbSWFfU-ICRGR8TYOcQ6j?usp=drive_link","doc"],
       ["LG/SC Review from 3U",D("1B4y9b2TMDEZYqG_tXoG2RCuPREQPI9ef"),"doc"],
       ["Domain & Range Worksheet (answers included)",D("12D6Wf_aWjvp3TMwibvPRFKc4oUhs6nWw"),"doc"],
