@@ -148,7 +148,7 @@ const COURSE = {
        resource so it does not pre-empt the investigation. */
     {d:14, iso:"2026-09-21", topic:"Modelling Investigation",
       noteLabel:"Modelling Student Sheet", ansLabel:"Answers",
-      note:D("1-Y0FdnjHSOzbROEVgHE6PNYCC_jJd4Qx"), ans:"" /* key: D("1wTcLtnPfZ6nc6EK64VyIHqUVV1gZ6v7y") */, extras:[
+      note:D("1-Y0FdnjHSOzbROEVgHE6PNYCC_jJd4Qx"), ans:D("1wTcLtnPfZ6nc6EK64VyIHqUVV1gZ6v7y") /* key: D("1wTcLtnPfZ6nc6EK64VyIHqUVV1gZ6v7y") */, extras:[
       ["Desmos: Fitting a Curve to Data (Regressions)","https://help.desmos.com/hc/en-us/articles/4406972958733-Regressions","doc"],
       ["Ms. Havrot: Modelling with Functions (9.7)","https://www.youtube.com/watch?v=EpwghsfP8-8","vid"],
     ]},
