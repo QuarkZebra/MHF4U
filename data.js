@@ -157,12 +157,12 @@ const COURSE = {
       ["Ms. Havrot: Modelling with Functions (9.7)","https://www.youtube.com/watch?v=EpwghsfP8-8","vid"],
     ]},
     {d:15, iso:"2026-09-22", topic:"Logarithmic Functions", num:"1.12",
-      note:D("1zLtR8wOeUk79-Jfs4b9c9-ShYPt3Ott7"), ans:"" /* key: D("1-tngecdW-zxHV5YMUQRmirPlrD584IPl") */, extras:[
+      note:D("1lTXx3zaNgTEb3E9BMMd8s9aUfYS98SAU"), ans:D("1ncSPEV4dikKXGgqgBsXm1n03wU0QDKGw") /* key: D("1ncSPEV4dikKXGgqgBsXm1n03wU0QDKGw") */, extras:[
       ["Ms. Havrot’s Video Lessons on Logs (Ch. 8)","https://www.youtube.com/watch?v=w-2ku9QNYlA&list=PLGinkJ_ZMO2HQwGf8mAmHGPQTJr1_faeF","vid"],
       ["Short-cut to solve ANY Problem","https://www.youtube.com/watch?v=dQw4w9WgXcQ","vid"],
     ]},
     {d:16, iso:"2026-09-23", topic:"Solving the Unsolvable", num:"1.13",
-      note:D("1LoKvDxo4CwPgx3WK0v4WrM-rmDf9XZfL"), ans:"" /* key: D("10uFTcUJQURf2lqoCEpZ1ToCOsrit9kWO") */, extras:[
+      note:D("1CXTait7kMRso8kUB34WrlecR2-Y4_HQc"), ans:"" /* key: D("1jGm6Of6l9bG1KeAj1nR40j7AL0OQlcjK") */, extras:[
       ["Ms. Havrot: Solving Equations & Inequalities (9.6)","https://www.youtube.com/watch?v=TwNCtmrbMBE","vid"],
       ["Solving Equations by Graphing","https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:eq/x2ec2f6f830c9fb89:sol-eq-graph/v/graphically-solving-equations-calculator","vid"],
     ]},
