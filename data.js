@@ -162,7 +162,7 @@ const COURSE = {
       ["Short-cut to solve ANY Problem","https://www.youtube.com/watch?v=dQw4w9WgXcQ","vid"],
     ]},
     {d:16, iso:"2026-09-23", topic:"Solving the Unsolvable", num:"1.13",
-      note:D("1CXTait7kMRso8kUB34WrlecR2-Y4_HQc"), ans:"" /* key: D("1jGm6Of6l9bG1KeAj1nR40j7AL0OQlcjK") */, extras:[
+      note:D("1CXTait7kMRso8kUB34WrlecR2-Y4_HQc"), ans:D("1jGm6Of6l9bG1KeAj1nR40j7AL0OQlcjK") /* key: D("1jGm6Of6l9bG1KeAj1nR40j7AL0OQlcjK") */, extras:[
       ["Ms. Havrot: Solving Equations & Inequalities (9.6)","https://www.youtube.com/watch?v=TwNCtmrbMBE","vid"],
       ["Solving Equations by Graphing","https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:eq/x2ec2f6f830c9fb89:sol-eq-graph/v/graphically-solving-equations-calculator","vid"],
     ]},
