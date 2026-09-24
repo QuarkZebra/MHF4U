@@ -173,6 +173,8 @@ const COURSE = {
       ["Practice Test",D("1ziRAF3iiRMCg2OfhBgeKtEdyA2OMxuC9"),"doc"],
       ["Answers",D("15OHqE5y9iex0s_O_5GhvdGafJtOS3tr9"),"ans"],
       ["Additional Review Questions",D("11r0VoVa4u5byf5-BcRGO_-Q_6owAWCSK"),"doc"],
+      ["Extra Review Practice",D("1GNuWjwPc2Nc9-Bo7Sqh48ZQsvdy_I0vU"),"doc"],
+      ["Answers",D("1QNMYO90DDrxNnR_TUxzHdn7LGvdN7HCq"),"ans"],
     ]},
     {d:18, iso:"2026-09-25", topic:"Unit Test", flag:"test", extras:[]},
   ]},
