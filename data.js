@@ -167,7 +167,7 @@ const COURSE = {
       ["Solving Equations by Graphing","https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:eq/x2ec2f6f830c9fb89:sol-eq-graph/v/graphically-solving-equations-calculator","vid"],
     ]},
     {d:17, iso:"2026-09-24", topic:"Review", flag:"review", noteLabel:"Unit Review", ansLabel:"Answers",
-      note:D("1tgd8tAWNrjrWStDTuG3Silp9dYItqU3Y"), ans:"" /* key: D("1sJGLB5I4XXF3DynZqWGzs7B5q4B4WFm5") */, extras:[
+      note:D("1tgd8tAWNrjrWStDTuG3Silp9dYItqU3Y"), ans:D("1sJGLB5I4XXF3DynZqWGzs7B5q4B4WFm5") /* key: D("1sJGLB5I4XXF3DynZqWGzs7B5q4B4WFm5") */, extras:[
       ["Review Learning Goals & Success Criteria","https://docs.google.com/document/d/1PM-Pt9rS_Bh1LQl8MU7-IcBnvwCZgj3dwJXL6Ghl7E0/edit","doc"],
       ["LG/SC with Possible Questions & Solutions",D("11ghnyya9SE1PYG3VXTOaKdcJt8iM1h5J"),"doc"],
       ["Practice Test",D("1ziRAF3iiRMCg2OfhBgeKtEdyA2OMxuC9"),"doc"],
