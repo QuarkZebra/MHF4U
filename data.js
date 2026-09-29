@@ -190,7 +190,7 @@ const COURSE = {
       ["Degree from TOV Practice","https://docs.google.com/document/d/172LPMGDL19hE7Vj0UnR8dyT4zD9oe4Qz/edit","doc"],
       ["Answers",D("174_8ZkyIjmRwAvdoZTs0uLzuL_YlPsIT"),"ans"],
     ]},
-    {d:2, iso:"2026-09-29", topic:"Polynomial Properties Investigation", num:"2.2", note:D("1k5gUkUAe7hrWdRbu5unmmHmH5ZN3psxp"), ans:"" /* key: D("19sOWTV24qhJTDBLSmLgXjqIP6A287bs6") */, extras:[
+    {d:2, iso:"2026-09-29", topic:"Polynomial Properties Investigation", num:"2.2", note:D("1k5gUkUAe7hrWdRbu5unmmHmH5ZN3psxp"), ans:D("19sOWTV24qhJTDBLSmLgXjqIP6A287bs6") /* key: D("19sOWTV24qhJTDBLSmLgXjqIP6A287bs6") */, extras:[
       ["Polynomial Practice",D("1Udu9Rbnu95tzH7AljcW4lIHWFF16GYcc"),"doc"],
       ["Answers",D("1Ue3x4bzz7LtC5vWPuxFCLHym5GTDBe-H"),"ans"],
     ]},
