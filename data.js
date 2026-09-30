@@ -194,7 +194,7 @@ const COURSE = {
       ["Polynomial Practice",D("1Udu9Rbnu95tzH7AljcW4lIHWFF16GYcc"),"doc"],
       ["Answers",D("1Ue3x4bzz7LtC5vWPuxFCLHym5GTDBe-H"),"ans"],
     ]},
-    {d:3, iso:"2026-09-30", topic:"Factored Polynomials", num:"2.3", note:D("1lpFwAQKGHioViIudls4NQiswELJzU1fY"), ans:"" /* key: D("1bKBJH1c_D2Z0AtXc1nblzwEqg6yUKIEG") */, extras:[
+    {d:3, iso:"2026-09-30", topic:"Factored Polynomials", num:"2.3", note:D("1lpFwAQKGHioViIudls4NQiswELJzU1fY"), ans:D("1bKBJH1c_D2Z0AtXc1nblzwEqg6yUKIEG") /* key: D("1bKBJH1c_D2Z0AtXc1nblzwEqg6yUKIEG") */, extras:[
       ["Factored Form Video Lesson","https://www.youtube.com/watch?v=5zvcIREUjW4","vid"],
     ]},
     {d:4, iso:"2026-10-01", topic:"Transformations of Polynomial Functions", num:"2.4", note:D("1DoMOw7QNwtu7tLnu9ILC8H9oon0k-m5m"), ans:"" /* key: D("157PAv_sOJKoe2qIRKtnFWGegjQUvbk_-") */, extras:[
