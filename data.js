@@ -15,6 +15,11 @@
            periods) just leave num out.
    - flag: "quiz" | "review" | "test" tints the row. Quiz days
            use noteLabel/ansLabel for custom link names.
+   - variants: when one lesson has two versions of the note (2.4
+           Mapping Rules / Input–Output), drop note/ans and give
+           variants:[ {label, note, ans}, {label, note, ans} ]
+           instead; they show side by side, each with its own
+           Answers link and its own stashed key.
    - extras: [ ["Title","https://…","kind"], … ]
            kind = "doc" (worksheet/handout), "ans" (solutions,
            shows the ☠︎ warning), "vid" (video), "skills" (a
@@ -197,7 +202,10 @@ const COURSE = {
     {d:3, iso:"2026-09-30", topic:"Factored Polynomials", num:"2.3", note:D("1lpFwAQKGHioViIudls4NQiswELJzU1fY"), ans:D("1bKBJH1c_D2Z0AtXc1nblzwEqg6yUKIEG") /* key: D("1bKBJH1c_D2Z0AtXc1nblzwEqg6yUKIEG") */, extras:[
       ["Factored Form Video Lesson","https://www.youtube.com/watch?v=5zvcIREUjW4","vid"],
     ]},
-    {d:4, iso:"2026-10-01", topic:"Transformations of Polynomial Functions", num:"2.4", note:D("1DoMOw7QNwtu7tLnu9ILC8H9oon0k-m5m"), ans:"" /* key: D("157PAv_sOJKoe2qIRKtnFWGegjQUvbk_-") */, extras:[
+    {d:4, iso:"2026-10-01", topic:"Transformations of Polynomial Functions", num:"2.4", variants:[
+      {label:"Mapping Rules", note:D("1DoMOw7QNwtu7tLnu9ILC8H9oon0k-m5m"), ans:"" /* key: D("157PAv_sOJKoe2qIRKtnFWGegjQUvbk_-") */},
+      {label:"Input–Output Diagrams", note:D("174OqO0Ln4Sxmg3fqaD6pqqmG_ynfrkbc"), ans:"" /* key: D("1YcN5ZKXuaWF2sCfoUicUJ4PwRFMzlUw0") */},
+    ], extras:[
       ["Transformations Video Lesson","https://www.youtube.com/watch?v=GUzxZUzqJJ8","vid"],
     ]},
     {d:5, iso:"2026-10-05", topic:"Practice Quiz", flag:"quiz",

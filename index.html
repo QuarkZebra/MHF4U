@@ -195,6 +195,11 @@ header .sub{color:var(--t3);font-size:.88rem;margin-top:.35rem}
 .dlink:hover .ico.pencil{transform:rotate(-8deg)}
 .dlink.ans:hover{opacity:1;color:var(--warn-fg)}
 .lrow{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
+/* Two versions of one note sit side by side, each with its own Answers */
+.vgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.3rem 1.1rem}
+.vcol{display:flex;flex-direction:column;gap:.22rem;min-width:0}
+.vlab{font-family:var(--mono);font-size:.56rem;letter-spacing:.08em;text-transform:uppercase;color:var(--t3);margin-bottom:.05rem}
+@media(max-width:480px){.vgrid{grid-template-columns:1fr;gap:.6rem}}
 .newp{display:inline-flex;align-items:center;font-family:var(--mono);font-size:.52rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;
   color:var(--accent-fg,#fff);background:var(--accent);border-radius:100px;padding:.1rem .45rem;line-height:1.4}
 .xitem{display:flex;flex-wrap:wrap;align-items:center;gap:.15rem .45rem}
@@ -430,8 +435,10 @@ function extrasHTML(list){
 }
 /* Keys released today or in the last few days get a pill so students can see what is new */
 function daysAgo(iso){return Math.round((new Date(TODAY+"T12:00:00")-new Date(iso+"T12:00:00"))/864e5)}
+/* A day's posted answers: its own ans, or the first posted variant's */
+function dayAns(day){return day.ans||((day.variants||[]).find(v=>v.ans)||{}).ans||""}
 function ansState(day){
-  if(!day.ans||!day.iso)return "";
+  if(!dayAns(day)||!day.iso)return "";
   const n=daysAgo(day.iso);
   return n===0?"today":(n>0&&n<=3)?"new":"";
 }
@@ -441,6 +448,16 @@ function newPill(day){
 }
 function noteLinks(day){
   const links=[];
+  if(day.variants){
+    const cols=day.variants.map(v=>{
+      const label=`${day.num} Blank Note & Practice Problems`;
+      const note=v.note?live(label,v.note,"note","arrow",false):pend(label,"arrow");
+      const ans=v.ans?`<span class="lrow">${live("Answers",v.ans,"ans","check",true)}${newPill(day)}</span>`:pend("Answers","check");
+      return `<div class="vcol"><span class="vlab">${v.label}</span>${note}${ans}</div>`;
+    });
+    links.push(`<div class="vgrid">${cols.join("")}</div>`);
+    return links;
+  }
   const hasNote=day.num||day.noteLabel;
   if(hasNote){
     const label=day.noteLabel||`${day.num} Blank Note & Practice Problems`;
@@ -472,7 +489,7 @@ function dayRow(day,i){
 function unitMeta(u){
   const dated=u.days.filter(d=>d.iso);
   const done=dated.filter(d=>d.iso<=TODAY).length;
-  const res=u.days.reduce((n,d)=>n+(d.note?1:0)+(d.ans?1:0)+(d.extras||[]).filter(Boolean).length,0);
+  const res=u.days.reduce((n,d)=>n+(d.note?1:0)+(d.ans?1:0)+(d.variants||[]).reduce((m,v)=>m+(v.note?1:0)+(v.ans?1:0),0)+(d.extras||[]).filter(Boolean).length,0);
   return `${done} / ${u.days.length} days · ${res} resource${res===1?"":"s"}`;
 }
 function freshTag(u){
@@ -540,7 +557,18 @@ function renderHero(){
   const isToday=day.iso===TODAY;
   const label=isToday?"Today":"Next class";
   const btns=[];
-  const hasNote=day.num||day.noteLabel;
+  if(day.variants){
+    day.variants.forEach(v=>{
+      const nl=`${day.num} Note · ${v.label}`;
+      btns.push(v.note
+        ?`<a class="btn pri" href="${esc(v.note)}" target="_blank" rel="noopener">${ico("arrow")} ${nl}</a>`
+        :`<span class="tipwrap"><span class="btn dis">${ico("arrow")} ${nl}</span><span class="tip info up">Coming soon</span></span>`);
+    });
+    day.variants.forEach(v=>{
+      if(v.ans)btns.push(`<span class="tipwrap"><a class="btn ansb" data-warn href="${esc(v.ans)}" target="_blank" rel="noopener">${ico("check")} Answers · ${v.label}</a><span class="tip warn up">${WARN}</span></span>`);
+    });
+  }
+  const hasNote=!day.variants&&(day.num||day.noteLabel);
   if(hasNote){
     const nl=day.noteLabel||`${day.num} Blank Note & Practice Problems`;
     btns.push(day.note
@@ -553,11 +581,11 @@ function renderHero(){
     }
   }
   // Until today's key is up, the most recently released key is one tap away
-  if(!day.ans){
-    const latest=[...allDated].reverse().find(e=>e.iso<=TODAY&&e.day.ans);
+  if(!dayAns(day)){
+    const latest=[...allDated].reverse().find(e=>e.iso<=TODAY&&dayAns(e.day));
     if(latest){
       const ll=latest.day.num?`Latest answers · ${latest.day.num}`:`Latest answers · ${latest.day.ansLabel||latest.day.topic}`;
-      btns.push(`<span class="tipwrap"><a class="btn ghost" data-warn href="${esc(latest.day.ans)}" target="_blank" rel="noopener">${ico("check")} ${ll}</a><span class="tip warn up">${WARN}</span></span>`);
+      btns.push(`<span class="tipwrap"><a class="btn ghost" data-warn href="${esc(dayAns(latest.day))}" target="_blank" rel="noopener">${ico("check")} ${ll}</a><span class="tip warn up">${WARN}</span></span>`);
     }
   }
   h.hidden=false;
