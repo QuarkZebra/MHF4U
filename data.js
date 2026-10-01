@@ -31,7 +31,7 @@
 
    To SAVE TIME:
 
-   git add . && git commit -m "textbook solutions day 1 again" && git push origin main
+   git add . && git commit -m "2.4 keys" && git push origin main
 
    ═══════════════════════════════════════════════════════════ */
 
@@ -203,8 +203,8 @@ const COURSE = {
       ["Factored Form Video Lesson","https://www.youtube.com/watch?v=5zvcIREUjW4","vid"],
     ]},
     {d:4, iso:"2026-10-01", topic:"Transformations of Polynomial Functions", num:"2.4", variants:[
-      {label:"Mapping Rules", note:D("1DoMOw7QNwtu7tLnu9ILC8H9oon0k-m5m"), ans:"" /* key: D("157PAv_sOJKoe2qIRKtnFWGegjQUvbk_-") */},
-      {label:"Input–Output Diagrams", note:D("174OqO0Ln4Sxmg3fqaD6pqqmG_ynfrkbc"), ans:"" /* key: D("1YcN5ZKXuaWF2sCfoUicUJ4PwRFMzlUw0") */},
+      {label:"Mapping Rules", note:D("1DoMOw7QNwtu7tLnu9ILC8H9oon0k-m5m"), ans:D("157PAv_sOJKoe2qIRKtnFWGegjQUvbk_-") /* key: D("157PAv_sOJKoe2qIRKtnFWGegjQUvbk_-") */},
+      {label:"Input–Output Diagrams", note:D("174OqO0Ln4Sxmg3fqaD6pqqmG_ynfrkbc"), ans:D("1YcN5ZKXuaWF2sCfoUicUJ4PwRFMzlUw0") /* key: D("1YcN5ZKXuaWF2sCfoUicUJ4PwRFMzlUw0") */},
     ], extras:[
       ["Transformations Video Lesson","https://www.youtube.com/watch?v=GUzxZUzqJJ8","vid"],
     ]},
