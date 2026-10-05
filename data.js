@@ -149,7 +149,7 @@ const COURSE = {
       ["Ms. Havrot: Products of Functions (9.3)","https://www.youtube.com/watch?v=Y-JY4aHhJwI","vid"],
     ]},
     {d:13, iso:"2026-09-18", topic:"Composite Functions", num:"1.11",
-      note:D("1xQ_qVFNHI7Eud09kgMYNCEYhEO109qFR"), ans:D("1Nw1YIzbD4k3vkAxB9uOvOLmT8nRZJgMx") /* key: D("1Nw1YIzbD4k3vkAxB9uOvOLmT8nRZJgMx") */, extras:[
+      note:D("1Tq7LMprWwZ6_3_GJQN34AViA4uhazPEi"), ans:D("1Nw1YIzbD4k3vkAxB9uOvOLmT8nRZJgMx") /* key: D("1Nw1YIzbD4k3vkAxB9uOvOLmT8nRZJgMx") */, extras:[
       ["Composite Functions Examples","https://www.youtube.com/watch?v=ZFPkQkURSxk","vid"],
       ["Ms. Havrot: Composition of Functions (9.5)","https://www.youtube.com/watch?v=9mG6iWo8TJA","vid"],
     ]},
@@ -179,7 +179,7 @@ const COURSE = {
       ["Answers",D("15OHqE5y9iex0s_O_5GhvdGafJtOS3tr9"),"ans"],
       ["Additional Review Questions",D("11r0VoVa4u5byf5-BcRGO_-Q_6owAWCSK"),"doc"],
       ["Extra Review Practice",D("1GNuWjwPc2Nc9-Bo7Sqh48ZQsvdy_I0vU"),"doc"],
-      ["Answers",D("1QNMYO90DDrxNnR_TUxzHdn7LGvdN7HCq"),"ans"],
+      ["Answers",D("1E3N9d49SH46cJ9Hy7Ye1gDYIqmKUffHu"),"ans"],
     ]},
     {d:18, iso:"2026-09-25", topic:"Unit Test", flag:"test", extras:[]},
   ]},
