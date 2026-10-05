@@ -209,7 +209,7 @@ const COURSE = {
       ["Transformations Video Lesson","https://www.youtube.com/watch?v=GUzxZUzqJJ8","vid"],
     ]},
     {d:5, iso:"2026-10-05", topic:"Practice Quiz", flag:"quiz",
-      noteLabel:"Practice Quiz", ansLabel:"Answers", note:"", ans:"", extras:[
+      noteLabel:"Practice Quiz", ansLabel:"Answers", note:D("1UmlbVM9gu7w38piaducrboZa4yOVcZ1_"), ans:D("10sPgKmSoIj-XrOp2bOu42vxblYTN-NqQ") /* key: D("10sPgKmSoIj-XrOp2bOu42vxblYTN-NqQ") */, extras:[
       ["Fundamental Theorem of Algebra","https://www.youtube.com/watch?v=shEk8sz1oOw","vid"],
     ]},
     {d:6, iso:"2026-10-06", topic:"Dividing Polynomials", num:"2.5", note:D("1XY6WebzZ6771Bv9XGCpFoY3i5BKirJMB"), ans:"" /* key: D("1C_C6oC6kgymrxZ2n8Z9QDZchb2FHjEtx") */, extras:[
