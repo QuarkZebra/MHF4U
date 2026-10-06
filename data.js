@@ -212,7 +212,7 @@ const COURSE = {
       noteLabel:"Practice Quiz", ansLabel:"Answers", note:D("1UmlbVM9gu7w38piaducrboZa4yOVcZ1_"), ans:D("10sPgKmSoIj-XrOp2bOu42vxblYTN-NqQ") /* key: D("10sPgKmSoIj-XrOp2bOu42vxblYTN-NqQ") */, extras:[
       ["Fundamental Theorem of Algebra","https://www.youtube.com/watch?v=shEk8sz1oOw","vid"],
     ]},
-    {d:6, iso:"2026-10-06", topic:"Dividing Polynomials", num:"2.5", note:D("1XY6WebzZ6771Bv9XGCpFoY3i5BKirJMB"), ans:"" /* key: D("1C_C6oC6kgymrxZ2n8Z9QDZchb2FHjEtx") */, extras:[
+    {d:6, iso:"2026-10-06", topic:"Dividing Polynomials", num:"2.5", note:D("1XY6WebzZ6771Bv9XGCpFoY3i5BKirJMB"), ans:D("1C_C6oC6kgymrxZ2n8Z9QDZchb2FHjEtx") /* key: D("1C_C6oC6kgymrxZ2n8Z9QDZchb2FHjEtx") */, extras:[
       ["Khan: Polynomial Division","https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-div/x2ec2f6f830c9fb89:quad-div-by-linear/v/polynomial-division","vid"],
       ["Lesson: Dividing Polynomials","https://www.youtube.com/watch?v=3Kb0K6h3Dds","vid"],
       ["Lesson: Synthetic Division","https://www.youtube.com/watch?v=HxFROWAW1Rs","vid"],
