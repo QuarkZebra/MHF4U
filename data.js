@@ -217,7 +217,7 @@ const COURSE = {
       ["Lesson: Dividing Polynomials","https://www.youtube.com/watch?v=3Kb0K6h3Dds","vid"],
       ["Lesson: Synthetic Division","https://www.youtube.com/watch?v=HxFROWAW1Rs","vid"],
     ]},
-    {d:7, iso:"2026-10-07", topic:"Dividing, Continued", note:"", ans:"", extras:[
+    {d:7, iso:"2026-10-07", topic:"Dividing, Continued", noteLabel:"Practice", note:D("153NrrXyaiVf_N5IthgkkKUBTQcd2AMuu"), ans:"" /* key: D("1RiAw3xqLPWJ38G-wZEXBJ_qITdBSpOV_") */, extras:[
       ["Dividing Polynomials Worksheet",D("1AQMKPh9Qmi2hTemVczPjsnTZkNs3EDCR"),"doc"],
     ]},
     {d:8, iso:"2026-10-08", topic:"Factoring Polynomials", num:"2.6", note:D("1g4AF98CI6i5GOJKr3rPpCXvjxvnjrtbZ"), ans:"" /* key: D("1t6K3RFryEzVzJrUkWCAYrMNTd7KZUYit") */, extras:[
