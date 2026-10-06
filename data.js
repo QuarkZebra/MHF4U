@@ -31,7 +31,7 @@
 
    To SAVE TIME:
 
-   git add . && git commit -m "2.4 keys" && git push origin main
+   git add . && git commit -m "change dividing extra practice" && git push origin main
 
    ═══════════════════════════════════════════════════════════ */
 
@@ -216,13 +216,13 @@ const COURSE = {
       ["Khan: Polynomial Division","https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-div/x2ec2f6f830c9fb89:quad-div-by-linear/v/polynomial-division","vid"],
       ["Lesson: Dividing Polynomials","https://www.youtube.com/watch?v=3Kb0K6h3Dds","vid"],
       ["Lesson: Synthetic Division","https://www.youtube.com/watch?v=HxFROWAW1Rs","vid"],
-      ["Dividing Polynomials Worksheet",D("1AQMKPh9Qmi2hTemVczPjsnTZkNs3EDCR"),"doc"],
     ]},
     {d:7, iso:"2026-10-07", topic:"Dividing, Continued", note:"", ans:"", extras:[
-      ["Extra Practice Problems",D("1XEZWZxJuqZwB4pGuMORzX2HZp8bPU_vB"),"doc"],
-      ["Answers",D("1XTbGLHrnSzJgyjTOOmZ9rc3-fkHtR7kC"),"ans"],
+      ["Dividing Polynomials Worksheet",D("1AQMKPh9Qmi2hTemVczPjsnTZkNs3EDCR"),"doc"],
     ]},
     {d:8, iso:"2026-10-08", topic:"Factoring Polynomials", num:"2.6", note:D("1g4AF98CI6i5GOJKr3rPpCXvjxvnjrtbZ"), ans:"" /* key: D("1t6K3RFryEzVzJrUkWCAYrMNTd7KZUYit") */, extras:[
+      ["Extra Practice Problems",D("1XEZWZxJuqZwB4pGuMORzX2HZp8bPU_vB"),"doc"],
+      ["Answers",D("1XTbGLHrnSzJgyjTOOmZ9rc3-fkHtR7kC"),"ans"],
       ["Factoring by Grouping","https://www.youtube.com/watch?v=t7-JCa7phCQ","vid"],
     ]},
     {d:9, iso:"2026-10-09", topic:"Factoring Sum or Difference of Cubes", num:"2.7", note:D("1eJQVq6vk9i7-pv-ps3SjqcoY7drZJ0Cv"), ans:"" /* key: D("1AlGxsZd45ZRdHSr0NH4AJ2kfOvrZ9UDI") */, extras:[
