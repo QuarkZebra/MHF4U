@@ -225,7 +225,7 @@ const COURSE = {
       ["Answers",D("1XTbGLHrnSzJgyjTOOmZ9rc3-fkHtR7kC"),"ans"],
       ["Factoring by Grouping","https://www.youtube.com/watch?v=t7-JCa7phCQ","vid"],
     ]},
-    {d:9, iso:"2026-10-09", topic:"Factoring Sum or Difference of Cubes", num:"2.7", note:D("1eJQVq6vk9i7-pv-ps3SjqcoY7drZJ0Cv"), ans:"" /* key: D("1AlGxsZd45ZRdHSr0NH4AJ2kfOvrZ9UDI") */, extras:[
+    {d:9, iso:"2026-10-09", topic:"Factoring Sum or Difference of Cubes", num:"2.7", note:D("1eJQVq6vk9i7-pv-ps3SjqcoY7drZJ0Cv"), ans:D("1AlGxsZd45ZRdHSr0NH4AJ2kfOvrZ9UDI") /* key: D("1AlGxsZd45ZRdHSr0NH4AJ2kfOvrZ9UDI") */, extras:[
       ["Sum or Difference of Cubes Worksheet",D("1Bqfy8GGOs4L2pddLKlm75nZBjWh6u7xw"),"doc"],
       ["Exponent Worksheet",D("18OkSTlX0wHwBtbrPsPz8bW6ABk8ZgI-q"),"doc"],
       ["Simplifying Rational Exponents",D("182zS4hOiXNe8B6RxQf09IoOOmXEmqjiG"),"doc"],
