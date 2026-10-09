@@ -230,6 +230,8 @@ const COURSE = {
       ["Exponent Worksheet",D("18OkSTlX0wHwBtbrPsPz8bW6ABk8ZgI-q"),"doc"],
       ["Simplifying Rational Exponents",D("182zS4hOiXNe8B6RxQf09IoOOmXEmqjiG"),"doc"],
       ["Answers",D("180cwK_JBCWNLol-6HXiQTAg7ReKHI53P"),"ans"],
+      ["Sum & Difference of Cubes: Worked Examples","https://www.youtube.com/watch?v=ADj8sGSjewg","vid"],
+      ["Sum & Difference of Cubes: Quick Lesson","https://www.youtube.com/watch?v=hixEq9KKcFE","vid"],
     ]},
     {d:10, iso:"2026-10-13", topic:"Review", flag:"review", noteLabel:"Unit Review", ansLabel:"Answers",
       note:D("1xCAJMXLOJ8KjM-6qnuBchq8Vm_wtm9QU"), ans:"" /* key: D("1KLxKlsFt-hF6EBgDiztsqgsg3GcZpSxU") */, extras:[
